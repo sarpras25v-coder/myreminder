@@ -1,0 +1,1517 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<meta name="theme-color" content="#3b82f6">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="PajakSIM">
+<title>PajakSIM Tracker</title>
+<link rel="manifest" id="manifest-link">
+<link rel="apple-touch-icon" href="data:image/png;base64,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">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0c0f1a;--sur:#141829;--sur2:#1c2235;--bdr:#252d45;--blue:#3b82f6;--grn:#22c55e;--amb:#f59e0b;--red:#ef4444;--pur:#a855f7;--wa:#25d366;--pink:#ec4899;--txt:#e8eaf0;--mut:#6b7a99;--dim:#3d4a6b;--r:16px;--st:env(safe-area-inset-top,0px);--sb:env(safe-area-inset-bottom,0px);}
+*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent;}
+html,body{height:100%;overflow-x:hidden;}
+body{background:var(--bg);color:var(--txt);font-family:'Plus Jakarta Sans',sans-serif;min-height:100dvh;max-width:430px;margin:0 auto;padding-bottom:calc(90px + var(--sb));position:relative;}
+body::before{content:'';position:fixed;top:-80px;left:-80px;width:260px;height:260px;background:radial-gradient(circle,rgba(59,130,246,.13) 0%,transparent 70%);pointer-events:none;z-index:0;}
+body::after{content:'';position:fixed;bottom:60px;right:-60px;width:220px;height:220px;background:radial-gradient(circle,rgba(236,72,153,.07) 0%,transparent 70%);pointer-events:none;z-index:0;}
+/* HEADER */
+.hdr{padding:calc(var(--st)+14px) 18px 12px;position:sticky;top:0;z-index:10;background:rgba(12,15,26,.93);backdrop-filter:blur(24px);border-bottom:1px solid var(--bdr);}
+.hdr-top{display:flex;align-items:center;justify-content:space-between;}
+.logo{display:flex;align-items:center;gap:10px;}
+.logo-ico{width:38px;height:38px;background:linear-gradient(135deg,#3b82f6,#ec4899);border-radius:11px;display:flex;align-items:center;justify-content:center;font-size:20px;flex-shrink:0;box-shadow:0 4px 12px rgba(236,72,153,.2);}
+.logo-txt{font-size:15px;font-weight:800;letter-spacing:-.5px;background:linear-gradient(90deg,#e8eaf0 30%,#6b7a99);-webkit-background-clip:text;-webkit-text-fill-color:transparent;}
+.logo-sub{font-size:9px;color:var(--dim);font-weight:500;margin-top:-1px;}
+.hdr-r{display:flex;gap:6px;align-items:center;}
+.ico-btn{width:34px;height:34px;border-radius:9px;border:1px solid var(--bdr);background:var(--sur);color:var(--mut);display:flex;align-items:center;justify-content:center;cursor:pointer;font-size:15px;transition:all .2s;position:relative;}
+.ico-btn:active{transform:scale(.91);}
+.ico-btn.wa-on{border-color:rgba(37,211,102,.4);background:rgba(37,211,102,.1);}
+.ndot{position:absolute;top:4px;right:4px;width:7px;height:7px;background:var(--red);border-radius:50%;border:2px solid var(--bg);display:none;}
+.ndot.on{display:block;}
+/* INSTALL CARD */
+.install-card{margin:12px 18px 0;background:linear-gradient(135deg,rgba(99,102,241,.1),rgba(236,72,153,.07));border:1px solid rgba(99,102,241,.3);border-radius:16px;padding:16px;}
+.install-card.hidden{display:none;}
+.install-row{display:flex;align-items:center;gap:12px;margin-bottom:12px;}
+.install-ico{width:44px;height:44px;border-radius:12px;background:linear-gradient(135deg,#3b82f6,#ec4899);display:flex;align-items:center;justify-content:center;font-size:22px;flex-shrink:0;}
+.install-t{font-size:13px;font-weight:800;}
+.install-s{font-size:11px;color:var(--mut);margin-top:3px;line-height:1.5;}
+.install-steps{background:rgba(0,0,0,.25);border-radius:11px;padding:11px 13px;margin-bottom:12px;display:none;}
+.install-steps.show{display:block;}
+.step{display:flex;gap:9px;margin-bottom:9px;}
+.step:last-child{margin-bottom:0;}
+.snum{width:19px;height:19px;border-radius:99px;background:var(--blue);color:#fff;font-size:9px;font-weight:800;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;}
+.stxt{font-size:11px;color:var(--txt);line-height:1.6;}
+.stxt b{color:#93c5fd;}
+.ibtn-row{display:grid;grid-template-columns:1fr auto;gap:8px;}
+.ibtn{background:linear-gradient(135deg,#6366f1,#ec4899);color:#fff;border:none;border-radius:10px;padding:11px;font-family:inherit;font-size:13px;font-weight:800;cursor:pointer;display:flex;align-items:center;gap:7px;justify-content:center;}
+.ibtn:active{transform:scale(.96);}
+.idis{background:var(--sur2);color:var(--mut);border:1px solid var(--bdr);border-radius:10px;padding:11px 12px;font-family:inherit;font-size:12px;font-weight:600;cursor:pointer;}
+/* BANNERS */
+.banner{margin:9px 18px 0;border-radius:12px;padding:10px 13px;display:flex;align-items:center;gap:10px;cursor:pointer;}
+.banner.hidden{display:none;}
+.banner-wa{background:rgba(37,211,102,.08);border:1px solid rgba(37,211,102,.25);}
+.banner-notif{background:rgba(245,158,11,.08);border:1px solid rgba(245,158,11,.25);}
+.banner-t{font-weight:700;font-size:12px;}
+.banner-wa .banner-t{color:#4ade80;}
+.banner-notif .banner-t{color:#fbbf24;}
+.banner-s{color:var(--mut);font-size:11px;margin-top:1px;}
+/* TABS */
+.tabs{display:flex;gap:0;padding:12px 18px 0;position:relative;z-index:1;}
+.tab{flex:1;padding:10px 0;text-align:center;font-size:12px;font-weight:700;color:var(--mut);cursor:pointer;border-bottom:2px solid var(--bdr);transition:all .2s;position:relative;}
+.tab.active{color:var(--blue);border-bottom-color:var(--blue);}
+.tab.active.tab-event{color:var(--pink);border-bottom-color:var(--pink);}
+.tab-badge{position:absolute;top:6px;right:calc(50% - 22px);background:var(--red);color:#fff;font-size:8px;font-weight:800;padding:1px 5px;border-radius:99px;min-width:16px;}
+/* SUMMARY */
+.sum-bar{display:flex;gap:8px;padding:12px 18px 0;position:relative;z-index:1;}
+.sum-chip{flex:1;background:var(--sur);border:1px solid var(--bdr);border-radius:11px;padding:9px 6px;text-align:center;position:relative;overflow:hidden;transition:transform .2s;cursor:pointer;}
+.sum-chip:active{transform:scale(.96);}
+.sum-chip::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;}
+.cr::before{background:var(--red);}.cy::before{background:var(--amb);}.cg::before{background:var(--grn);}.cp::before{background:var(--pink);}
+.sc{font-size:22px;font-weight:800;font-family:'JetBrains Mono',monospace;line-height:1;}
+.cr .sc{color:var(--red);}.cy .sc{color:var(--amb);}.cg .sc{color:var(--grn);}.cp .sc{color:var(--pink);}
+.sl{font-size:8px;color:var(--mut);margin-top:3px;text-transform:uppercase;letter-spacing:.5px;font-weight:700;}
+/* FILTER */
+.filt-row{display:flex;gap:7px;padding:10px 18px 0;overflow-x:auto;-ms-overflow-style:none;scrollbar-width:none;}
+.filt-row::-webkit-scrollbar{display:none;}
+.fpill{white-space:nowrap;padding:5px 11px;border-radius:99px;border:1px solid var(--bdr);background:var(--sur);color:var(--mut);font-size:11px;font-weight:700;cursor:pointer;transition:all .18s;}
+.fpill.active{background:var(--blue);border-color:var(--blue);color:#fff;}
+.fpill.active.ev-pill{background:var(--pink);border-color:var(--pink);}
+.fpill:active{transform:scale(.95);}
+/* CARDS */
+.card-list{padding:12px 18px 0;display:flex;flex-direction:column;gap:10px;position:relative;z-index:1;}
+.dcard{background:var(--sur);border:1px solid var(--bdr);border-radius:var(--r);padding:14px;position:relative;overflow:hidden;transition:transform .18s;animation:sIn .28s ease both;}
+@keyframes sIn{from{opacity:0;transform:translateY(10px);}to{opacity:1;transform:translateY(0);}}
+.dcard:active{transform:scale(.987);}
+.cbar{position:absolute;left:0;top:0;bottom:0;width:4px;border-radius:4px 0 0 4px;}
+.sd .cbar{background:linear-gradient(180deg,#ef4444,#dc2626);}
+.sw .cbar{background:linear-gradient(180deg,#f59e0b,#d97706);}
+.ss .cbar{background:linear-gradient(180deg,#22c55e,#16a34a);}
+.se .cbar{background:var(--dim);}
+.sk .cbar{background:linear-gradient(180deg,#22c55e,#059669);}
+.sk{opacity:.45;filter:saturate(.2);}
+/* Event card bar colors */
+.ev-d .cbar{background:linear-gradient(180deg,#ec4899,#db2777);}
+.ev-w .cbar{background:linear-gradient(180deg,#f59e0b,#d97706);}
+.ev-s .cbar{background:linear-gradient(180deg,#8b5cf6,#7c3aed);}
+.ev-done .cbar{background:var(--dim);}
+.selesai-badge{display:inline-flex;align-items:center;gap:4px;font-size:9px;font-weight:800;text-transform:uppercase;letter-spacing:.8px;padding:3px 8px;border-radius:99px;background:rgba(34,197,94,.15);color:#4ade80;}
+.ctop{display:flex;align-items:flex-start;justify-content:space-between;margin-bottom:10px;padding-left:9px;}
+.cbadge{display:inline-flex;align-items:center;gap:4px;font-size:9px;font-weight:800;text-transform:uppercase;letter-spacing:.9px;padding:3px 8px;border-radius:99px;margin-bottom:4px;}
+.bp{background:rgba(59,130,246,.15);color:#60a5fa;}
+.bs{background:rgba(168,85,247,.15);color:#c084fc;}
+.be{background:rgba(236,72,153,.15);color:#f472b6;}
+.bb{background:rgba(245,158,11,.15);color:#fbbf24;}
+.cname{font-size:15px;font-weight:700;color:var(--txt);line-height:1.25;}
+.csub{font-family:'JetBrains Mono',monospace;font-size:12px;font-weight:600;color:var(--mut);margin-top:2px;}
+.cbtns{display:flex;gap:4px;flex-wrap:wrap;justify-content:flex-end;}
+.cbtn{width:29px;height:29px;border-radius:8px;border:1px solid var(--bdr);background:var(--sur2);color:var(--mut);display:flex;align-items:center;justify-content:center;cursor:pointer;font-size:12px;transition:all .15s;}
+.cbtn:active{transform:scale(.88);}
+.cbtn-done{background:rgba(34,197,94,.12);border-color:rgba(34,197,94,.3);color:#4ade80;width:auto;padding:0 9px;font-size:11px;font-weight:800;font-family:inherit;}
+.cbtn-done.paid{background:rgba(107,122,153,.1);border-color:var(--bdr);color:var(--mut);}
+.cbot{display:flex;align-items:center;justify-content:space-between;padding-left:9px;}
+.mdate{font-family:'JetBrains Mono',monospace;font-size:17px;font-weight:600;color:var(--txt);line-height:1;}
+.dname{font-size:11px;color:var(--mut);margin-top:3px;}
+.dpill{min-width:68px;height:50px;border-radius:12px;display:flex;flex-direction:column;align-items:center;justify-content:center;font-family:'JetBrains Mono',monospace;}
+.sd .dpill,.ev-d .dpill{background:rgba(239,68,68,.12);border:1px solid rgba(239,68,68,.3);}
+.sw .dpill,.ev-w .dpill{background:rgba(245,158,11,.12);border:1px solid rgba(245,158,11,.3);}
+.ss .dpill{background:rgba(34,197,94,.1);border:1px solid rgba(34,197,94,.25);}
+.ev-s .dpill{background:rgba(139,92,246,.1);border:1px solid rgba(139,92,246,.25);}
+.se .dpill,.ev-done .dpill{background:rgba(61,74,107,.15);border:1px solid rgba(61,74,107,.3);}
+.sk .dpill{background:rgba(34,197,94,.08);border:1px solid rgba(34,197,94,.2);}
+.dn{font-size:18px;font-weight:700;line-height:1;}
+.sd .dn,.ev-d .dn{color:var(--red);}
+.sw .dn,.ev-w .dn{color:var(--amb);}
+.ss .dn{color:var(--grn);}
+.ev-s .dn{color:#a78bfa;}
+.se .dn,.ev-done .dn{color:var(--dim);}
+.sk .dn{color:#4ade80;font-size:14px;}
+.dl{font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:.4px;margin-top:2px;}
+.sd .dl,.ev-d .dl{color:#f87171;}
+.sw .dl,.ev-w .dl{color:#fbbf24;}
+.ss .dl{color:#4ade80;}
+.ev-s .dl{color:#a78bfa;}
+.se .dl,.ev-done .dl{color:var(--dim);}
+.sk .dl{color:#4ade80;}
+/* yearly badge */
+.yearly-tag{display:inline-flex;align-items:center;gap:3px;font-size:9px;font-weight:700;color:#f472b6;background:rgba(236,72,153,.1);border-radius:99px;padding:2px 7px;margin-left:4px;}
+.cnote{padding:8px 9px 0;border-top:1px solid var(--bdr);margin-top:10px;font-size:11px;color:var(--mut);display:flex;align-items:flex-start;gap:5px;line-height:1.5;}
+.paid-info{margin-top:9px;padding:7px 9px;border-top:1px solid var(--bdr);display:flex;align-items:center;gap:7px;font-size:11px;color:#4ade80;}
+.paid-info span{color:var(--mut);}
+.cwa{margin-top:9px;padding-top:9px;border-top:1px solid var(--bdr);}
+.cwa-btn{width:100%;background:rgba(37,211,102,.1);border:1px solid rgba(37,211,102,.25);border-radius:8px;padding:7px;display:flex;align-items:center;gap:6px;font-size:11px;font-weight:700;color:#4ade80;cursor:pointer;justify-content:center;font-family:inherit;}
+.cwa-btn:active{transform:scale(.97);}
+@keyframes pulse-red{0%,100%{box-shadow:0 0 0 0 rgba(239,68,68,0);}50%{box-shadow:0 0 0 5px rgba(239,68,68,.15);}}
+.sd{animation:pulse-red 2.5s ease infinite,sIn .28s ease both;}
+@keyframes pulse-pink{0%,100%{box-shadow:0 0 0 0 rgba(236,72,153,0);}50%{box-shadow:0 0 0 5px rgba(236,72,153,.15);}}
+.ev-d{animation:pulse-pink 2.5s ease infinite,sIn .28s ease both;}
+.empty{text-align:center;padding:50px 24px;color:var(--mut);}
+.ei{font-size:52px;margin-bottom:14px;}
+.et{font-size:17px;font-weight:800;color:var(--txt);margin-bottom:7px;}
+.ed{font-size:13px;line-height:1.7;}
+/* FAB */
+.fab{position:fixed;bottom:calc(20px + var(--sb));left:50%;transform:translateX(-50%);color:#fff;border:none;border-radius:99px;padding:14px 24px;font-family:'Plus Jakarta Sans',sans-serif;font-size:14px;font-weight:800;cursor:pointer;display:flex;align-items:center;gap:8px;z-index:20;transition:all .2s;white-space:nowrap;}
+.fab:active{transform:translateX(-50%) scale(.94);}
+.fab-deadline{background:linear-gradient(135deg,#3b82f6,#6366f1);box-shadow:0 6px 24px rgba(59,130,246,.4);}
+.fab-event{background:linear-gradient(135deg,#ec4899,#a855f7);box-shadow:0 6px 24px rgba(236,72,153,.4);}
+/* OVERLAY */
+.overlay{position:fixed;inset:0;background:rgba(0,0,0,.75);z-index:100;display:none;align-items:flex-end;backdrop-filter:blur(5px);}
+.overlay.open{display:flex;}
+.sheet{background:var(--sur);border-radius:24px 24px 0 0;border:1px solid var(--bdr);border-bottom:none;width:100%;max-height:94dvh;overflow-y:auto;padding:10px 20px calc(20px + var(--sb));animation:shUp .3s cubic-bezier(.32,.72,0,1);}
+@keyframes shUp{from{transform:translateY(100%);}to{transform:translateY(0);}}
+.handle{width:38px;height:4px;background:var(--bdr);border-radius:99px;margin:4px auto 18px;}
+.sh-title{font-size:17px;font-weight:800;margin-bottom:16px;}
+/* FORM */
+.fg{margin-bottom:14px;}
+.fl{display:block;font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:.9px;color:var(--mut);margin-bottom:6px;}
+.fi,.fsel,.fta{width:100%;background:var(--bg);border:1px solid var(--bdr);border-radius:10px;color:var(--txt);font-family:'Plus Jakarta Sans',sans-serif;font-size:14px;padding:11px 13px;outline:none;transition:border-color .2s;-webkit-appearance:none;}
+.fi:focus,.fsel:focus,.fta:focus{border-color:var(--blue);}
+.fi.pink-focus:focus{border-color:var(--pink);}
+input[type="date"]{color-scheme:dark;}
+.fsel option{background:#1c2235;}
+.fta{resize:none;min-height:64px;}
+.tgrid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:14px;}
+.tbtn{padding:11px;border-radius:10px;border:1px solid var(--bdr);background:var(--bg);color:var(--mut);font-family:inherit;font-size:12px;font-weight:700;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:5px;transition:all .18s;}
+.tbtn.tp{background:rgba(59,130,246,.12);border-color:#3b82f6;color:#60a5fa;}
+.tbtn.ts{background:rgba(168,85,247,.12);border-color:#a855f7;color:#c084fc;}
+.tbtn.te{background:rgba(236,72,153,.12);border-color:#ec4899;color:#f472b6;}
+.brow{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:6px;}
+.btn{padding:13px;border-radius:10px;border:none;font-family:inherit;font-size:14px;font-weight:700;cursor:pointer;transition:all .18s;}
+.btn:active{transform:scale(.96);}
+.bcnl{background:var(--sur2);color:var(--mut);border:1px solid var(--bdr);}
+.bsav{background:linear-gradient(135deg,#3b82f6,#6366f1);color:#fff;}
+.bpink{background:linear-gradient(135deg,#ec4899,#a855f7);color:#fff;}
+.bwa{background:linear-gradient(135deg,#128c7e,#25d366);color:#fff;}
+.bgrn{background:linear-gradient(135deg,#16a34a,#22c55e);color:#fff;}
+.bful{grid-column:1/-1;}
+/* TOGGLE SWITCH */
+.toggle-row{display:flex;align-items:center;justify-content:space-between;background:var(--bg);border:1px solid var(--bdr);border-radius:10px;padding:12px 14px;margin-bottom:14px;}
+.toggle-label{font-size:13px;font-weight:700;}
+.toggle-sub{font-size:11px;color:var(--mut);margin-top:2px;}
+.toggle{width:44px;height:24px;background:var(--bdr);border-radius:99px;position:relative;cursor:pointer;transition:background .2s;flex-shrink:0;}
+.toggle.on{background:var(--grn);}
+.toggle::after{content:'';position:absolute;width:18px;height:18px;background:#fff;border-radius:50%;top:3px;left:3px;transition:transform .2s;}
+.toggle.on::after{transform:translateX(20px);}
+/* SETTINGS LIST */
+.alist{display:flex;flex-direction:column;gap:9px;}
+.aitem{background:var(--bg);border:1px solid var(--bdr);border-radius:11px;padding:14px;display:flex;align-items:center;gap:12px;cursor:pointer;transition:all .18s;}
+.aitem:active{transform:scale(.98);border-color:var(--blue);}
+.aico{width:40px;height:40px;border-radius:11px;display:flex;align-items:center;justify-content:center;font-size:19px;flex-shrink:0;}
+.albl{font-size:13px;font-weight:700;}
+.adsc{font-size:11px;color:var(--mut);margin-top:2px;}
+/* WA SHEET */
+.wa-pgrid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:16px;}
+.wprov{background:var(--bg);border:2px solid var(--bdr);border-radius:12px;padding:13px;text-align:center;cursor:pointer;transition:all .18s;}
+.wprov.active{border-color:var(--wa);background:rgba(37,211,102,.08);}
+.wprov:active{transform:scale(.96);}
+.wprov-ico{font-size:26px;margin-bottom:5px;}
+.wprov-name{font-size:13px;font-weight:800;color:var(--txt);}
+.wprov-tag{font-size:10px;color:var(--mut);margin-top:2px;}
+.wprov.active .wprov-name{color:var(--wa);}
+.wa-guide{background:var(--bg);border:1px solid var(--bdr);border-radius:11px;padding:13px;margin-bottom:13px;}
+.wa-guide-t{font-size:12px;font-weight:800;color:var(--txt);margin-bottom:9px;}
+.wgs{display:flex;gap:8px;margin-bottom:8px;font-size:11px;line-height:1.6;}
+.wgs:last-child{margin-bottom:0;}
+.wgn{width:17px;height:17px;border-radius:99px;background:var(--wa);color:#fff;font-size:9px;font-weight:800;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px;}
+.wgt{color:var(--mut);flex:1;}
+.wgt a{color:#4ade80;text-decoration:none;}
+.wgt b{color:var(--txt);}
+/* RECIPIENTS */
+.recip-block{background:var(--bg);border:1px solid var(--bdr);border-radius:11px;padding:14px;margin-bottom:14px;}
+.recip-title{font-size:12px;font-weight:800;color:var(--txt);margin-bottom:12px;display:flex;align-items:center;gap:6px;}
+.recip-row{display:flex;gap:8px;margin-bottom:10px;align-items:flex-end;}
+.recip-row:last-child{margin-bottom:0;}
+.recip-icon{width:36px;height:36px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0;margin-bottom:1px;}
+.ri-me{background:rgba(59,130,246,.12);}
+.ri-wife{background:rgba(236,72,153,.12);}
+.recip-fields{flex:1;}
+.recip-name-input{width:100%;background:var(--sur2);border:1px solid var(--bdr);border-radius:7px;color:var(--txt);font-family:'Plus Jakarta Sans',sans-serif;font-size:11px;padding:6px 10px;outline:none;margin-bottom:5px;}
+.recip-num-row{display:flex;align-items:center;gap:6px;}
+.recip-num{flex:1;background:var(--bg);border:1px solid var(--bdr);border-radius:7px;color:var(--txt);font-family:'JetBrains Mono',monospace;font-size:12px;padding:7px 10px;outline:none;}
+.recip-toggle{width:34px;height:20px;background:var(--bdr);border-radius:99px;position:relative;cursor:pointer;transition:background .2s;flex-shrink:0;}
+.recip-toggle.on{background:var(--grn);}
+.recip-toggle::after{content:'';position:absolute;width:14px;height:14px;background:#fff;border-radius:50%;top:3px;left:3px;transition:transform .2s;}
+.recip-toggle.on::after{transform:translateX(14px);}
+.wa-status{display:flex;align-items:center;gap:10px;background:var(--bg);border:1px solid var(--bdr);border-radius:10px;padding:11px;margin-bottom:13px;}
+.wsdot{width:10px;height:10px;border-radius:50%;flex-shrink:0;}
+.wsdot.ok{background:var(--wa);box-shadow:0 0 6px rgba(37,211,102,.5);}
+.wsdot.err{background:var(--red);}.wsdot.idle{background:var(--mut);}
+.ws-t{font-size:13px;font-weight:700;}
+.ws-s{font-size:11px;color:var(--mut);margin-top:1px;}
+/* NOTIF CHIPS */
+.ntgrid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:13px;}
+.ntchip{background:var(--bg);border:1px solid var(--bdr);border-radius:9px;padding:9px;text-align:center;cursor:pointer;transition:all .18s;}
+.ntchip.on{background:rgba(59,130,246,.12);border-color:#3b82f6;}
+.ntchip .nd{font-family:'JetBrains Mono',monospace;font-size:16px;font-weight:700;color:var(--txt);}
+.ntchip .ns{font-size:10px;color:var(--mut);margin-top:2px;}
+.ntchip.on .nd{color:#60a5fa;}
+.ntchip.triple{border-color:rgba(245,158,11,.3);}
+.ntchip.triple.on{background:rgba(245,158,11,.12);border-color:var(--amb);}
+.ntchip.triple.on .nd{color:#fbbf24;}
+.triple-badge{font-size:8px;font-weight:800;color:var(--amb);background:rgba(245,158,11,.15);border-radius:99px;padding:1px 5px;display:inline-block;margin-top:2px;}
+/* EVENT FORM */
+.ev-type-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:7px;margin-bottom:14px;}
+.ev-type-btn{padding:10px 8px;border-radius:9px;border:1px solid var(--bdr);background:var(--bg);color:var(--mut);font-family:inherit;font-size:11px;font-weight:700;cursor:pointer;text-align:center;transition:all .18s;}
+.ev-type-btn.active{background:rgba(236,72,153,.12);border-color:#ec4899;color:#f472b6;}
+/* CONFIRM */
+.confirm-box{background:rgba(34,197,94,.08);border:1px solid rgba(34,197,94,.25);border-radius:13px;padding:15px;margin-bottom:15px;text-align:center;}
+.confirm-box.pink{background:rgba(236,72,153,.08);border-color:rgba(236,72,153,.25);}
+.confirm-icon{font-size:38px;margin-bottom:9px;}
+.confirm-title{font-size:16px;font-weight:800;color:var(--txt);}
+.confirm-sub{font-size:12px;color:var(--mut);margin-top:4px;line-height:1.6;}
+/* TOAST */
+.toast{position:fixed;bottom:calc(92px + var(--sb));left:50%;transform:translateX(-50%) translateY(16px);background:#1c2235;border:1px solid var(--bdr);border-radius:12px;padding:10px 16px;font-size:13px;font-weight:600;color:var(--txt);z-index:200;opacity:0;transition:all .28s;pointer-events:none;white-space:nowrap;display:flex;align-items:center;gap:7px;max-width:92vw;}
+.toast.show{opacity:1;transform:translateX(-50%) translateY(0);}
+#file-in{display:none;}
+.hidden{display:none!important;}
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<div class="hdr">
+  <div class="hdr-top">
+    <div class="logo">
+      <div class="logo-ico">🚗</div>
+      <div>
+        <div class="logo-txt">PajakSIM & Event Tracker</div>
+        <div class="logo-sub">Pajak · SIM · Ulang Tahun · Hari Penting</div>
+      </div>
+    </div>
+    <div class="hdr-r">
+      <button class="ico-btn" id="btn-wa" onclick="openWASheet()" title="WhatsApp"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg><div class="ndot" id="wa-dot"></div></button>
+      <button class="ico-btn" onclick="openNotifSheet()">🔔<div class="ndot" id="ndot"></div></button>
+      <button class="ico-btn" onclick="openDataSheet()">⚙️</button>
+    </div>
+  </div>
+  <div style="text-align:right;padding:3px 0 0;min-height:16px" id="sync-indicator">
+    <span style="font-size:11px;color:var(--dim)">☁️ Belum sync</span>
+  </div>
+</div>
+
+<!-- INSTALL CARD -->
+<div class="install-card" id="install-card">
+  <div class="install-row">
+    <div class="install-ico">🚗</div>
+    <div><div class="install-t">Install App ke HP</div>
+    <div class="install-s">Tambahkan ke layar utama untuk notifikasi &amp; offline</div></div>
+  </div>
+  <div class="install-steps" id="steps-chrome">
+    <div class="step"><div class="snum">1</div><div class="stxt">Ketuk <b>⋮ tiga titik</b> pojok kanan atas Chrome</div></div>
+    <div class="step"><div class="snum">2</div><div class="stxt">Pilih <b>"Tambahkan ke layar utama"</b> atau <b>"Install App"</b></div></div>
+    <div class="step"><div class="snum">3</div><div class="stxt">Ketuk <b>"Tambahkan"</b> → ikon muncul ✅</div></div>
+  </div>
+  <div class="install-steps" id="steps-ios">
+    <div class="step"><div class="snum">1</div><div class="stxt">Ketuk ikon <b>Share 🔗</b> di bawah Safari</div></div>
+    <div class="step"><div class="snum">2</div><div class="stxt">Pilih <b>"Add to Home Screen"</b></div></div>
+    <div class="step"><div class="snum">3</div><div class="stxt">Ketuk <b>"Add"</b> → selesai ✅</div></div>
+  </div>
+  <div class="install-steps" id="steps-samsung">
+    <div class="step"><div class="snum">1</div><div class="stxt">Ketuk <b>☰ Menu</b> pojok kanan bawah</div></div>
+    <div class="step"><div class="snum">2</div><div class="stxt">Pilih <b>"Tambah halaman ke" → "Layar Utama"</b></div></div>
+    <div class="step"><div class="snum">3</div><div class="stxt">Ketuk <b>"Tambah"</b> ✅</div></div>
+  </div>
+  <div class="ibtn-row">
+    <button class="ibtn" id="install-btn" onclick="handleInstallBtn()"><span id="install-ico">📲</span><span id="install-txt">Cara Install</span></button>
+    <button class="idis" onclick="dismissInstall()">Nanti</button>
+  </div>
+</div>
+
+<!-- BANNERS -->
+<div class="banner banner-wa hidden" id="wa-banner" onclick="openWASheet()">
+  <div style="font-size:19px;flex-shrink:0"><svg width="19" height="19" viewBox="0 0 24 24" fill="#25d366"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></div>
+  <div style="flex:1"><div class="banner-t">Aktifkan Notifikasi WhatsApp</div>
+  <div class="banner-s">Setup pengingat deadline &amp; hari penting ke 2 nomor</div></div>
+  <div style="color:var(--mut);font-size:14px">›</div>
+</div>
+<div class="banner banner-notif hidden" id="notif-banner" onclick="requestNotifPermission()">
+  <div style="font-size:19px;flex-shrink:0">🔔</div>
+  <div style="flex:1"><div class="banner-t">Aktifkan Notifikasi Browser</div>
+  <div class="banner-s">Pengingat otomatis H-30, H-7, H-1 via browser</div></div>
+  <div style="color:var(--mut);font-size:14px">›</div>
+</div>
+
+<!-- TABS -->
+<div class="tabs">
+  <div class="tab active" id="tab-deadline" onclick="switchTab('deadline')">
+    🚗 Deadline
+    <span class="tab-badge" id="tab-badge-deadline" style="display:none">0</span>
+  </div>
+  <div class="tab tab-event" id="tab-event" onclick="switchTab('event')">
+    🎂 Hari Penting
+    <span class="tab-badge" id="tab-badge-event" style="display:none">0</span>
+  </div>
+</div>
+
+<!-- SUMMARY DEADLINE -->
+<div class="sum-bar" id="sum-bar-deadline">
+  <div class="sum-chip cr" onclick="setFilter('danger',null)"><div class="sc" id="cnt-d">0</div><div class="sl">Mendesak</div></div>
+  <div class="sum-chip cy" onclick="setFilter('warning',null)"><div class="sc" id="cnt-w">0</div><div class="sl">Segera</div></div>
+  <div class="sum-chip cg" onclick="setFilter('safe',null)"><div class="sc" id="cnt-s">0</div><div class="sl">Aman</div></div>
+</div>
+
+<!-- SUMMARY EVENT -->
+<div class="sum-bar hidden" id="sum-bar-event">
+  <div class="sum-chip cr"><div class="sc" id="cnt-ev-d">0</div><div class="sl">Minggu Ini</div></div>
+  <div class="sum-chip cy"><div class="sc" id="cnt-ev-w">0</div><div class="sl">Bulan Ini</div></div>
+  <div class="sum-chip cp"><div class="sc" id="cnt-ev-s">0</div><div class="sl">Mendatang</div></div>
+</div>
+
+<!-- FILTER DEADLINE -->
+<div class="filt-row" id="filt-deadline">
+  <div class="fpill active" onclick="setFilter('semua',this)">Semua</div>
+  <div class="fpill" onclick="setFilter('pajak',this)">🚙 Pajak</div>
+  <div class="fpill" onclick="setFilter('sim',this)">🪪 SIM</div>
+  <div class="fpill" onclick="setFilter('danger',this)">🔴 Mendesak</div>
+  <div class="fpill" onclick="setFilter('selesai',this)">✅ Selesai</div>
+</div>
+
+<!-- FILTER EVENT -->
+<div class="filt-row hidden" id="filt-event">
+  <div class="fpill active ev-pill" onclick="setFilter('semua-ev',this)">Semua</div>
+  <div class="fpill ev-pill" onclick="setFilter('ulang-tahun',this)">🎂 Ultah</div>
+  <div class="fpill ev-pill" onclick="setFilter('anniversary',this)">💍 Anniversary</div>
+  <div class="fpill ev-pill" onclick="setFilter('hari-penting',this)">⭐ Hari Penting</div>
+</div>
+
+<div class="card-list" id="card-list"></div>
+<button class="fab fab-deadline" onclick="openForm()">＋ Tambah Deadline</button>
+<div class="toast" id="toast"></div>
+<input type="file" id="file-in" accept=".json" onchange="doImport(event)">
+
+<!-- FORM DEADLINE -->
+<div class="overlay" id="form-ov" onclick="ovClose(event,'form-ov')">
+  <div class="sheet">
+    <div class="handle"></div><div class="sh-title" id="form-title">Tambah Deadline</div>
+    <div class="tgrid">
+      <button class="tbtn tp" id="tp-p" onclick="setType('pajak')">🚙 Pajak Kendaraan</button>
+      <button class="tbtn" id="tp-s" onclick="setType('sim')">🪪 SIM</button>
+    </div>
+    <div class="fg"><label class="fl">Nama Pemilik / Label</label>
+      <input class="fi" id="f-nama" type="text" placeholder="cth: Honda Beat / SIM A Budi"></div>
+    <div class="fg" id="fg-plat"><label class="fl">Nomor Plat Kendaraan</label>
+      <input class="fi" id="f-plat" type="text" placeholder="cth: B 1234 ABC"
+        style="text-transform:uppercase;font-family:'JetBrains Mono',monospace;" oninput="this.value=this.value.toUpperCase()"></div>
+    <div class="fg hidden" id="fg-sim"><label class="fl">Jenis SIM</label>
+      <select class="fsel" id="f-sim"><option>SIM A</option><option>SIM B1</option><option>SIM B2</option><option>SIM C</option><option>SIM C1</option><option>SIM C2</option><option>SIM D</option></select></div>
+    <div class="fg"><label class="fl">Tanggal Deadline</label><input type="date" class="fi" id="f-tgl"></div>
+    <div class="fg"><label class="fl">Catatan (opsional)</label>
+      <textarea class="fta" id="f-note" placeholder="cth: Bawa BPKB asli, bayar di SAMSAT..."></textarea></div>
+    <div class="brow">
+      <button class="btn bcnl" onclick="closeOv('form-ov')">Batal</button>
+      <button class="btn bsav" onclick="saveEntry()">💾 Simpan</button>
+    </div>
+  </div>
+</div>
+
+<!-- FORM EVENT -->
+<div class="overlay" id="ev-form-ov" onclick="ovClose(event,'ev-form-ov')">
+  <div class="sheet">
+    <div class="handle"></div><div class="sh-title" id="ev-form-title">Tambah Event</div>
+    <div class="fl" style="margin-bottom:8px">Jenis Event:</div>
+    <div class="ev-type-grid" style="margin-bottom:14px">
+      <button class="ev-type-btn active" data-t="ulang-tahun" onclick="setEvType('ulang-tahun')">🎂 Ulang Tahun</button>
+      <button class="ev-type-btn" data-t="anniversary" onclick="setEvType('anniversary')">💍 Anniversary</button>
+      <button class="ev-type-btn" data-t="hari-penting" onclick="setEvType('hari-penting')">⭐ Hari Penting</button>
+      <button class="ev-type-btn" data-t="lainnya" onclick="setEvType('lainnya')">📅 Lainnya</button>
+    </div>
+    <div class="fg"><label class="fl">Nama</label>
+      <input class="fi pink-focus" id="ev-nama" type="text" placeholder="cth: Ulang Tahun Budi / Anniversary ke-5"></div>
+    <div class="fg"><label class="fl">Tanggal</label>
+      <input type="date" class="fi pink-focus" id="ev-date"></div>
+    <div class="toggle-row">
+      <div>
+        <div class="toggle-label">🔁 Berulang Setiap Tahun</div>
+        <div class="toggle-sub">Aktifkan untuk ulang tahun &amp; anniversary</div>
+      </div>
+      <div class="toggle on" id="ev-yearly" onclick="this.classList.toggle('on')"></div>
+    </div>
+    <div class="toggle-row" style="margin-bottom:14px">
+      <div>
+        <div class="toggle-label"><svg width="14" height="14" viewBox="0 0 24 24" fill="#25d366"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg> Kirim WA Otomatis</div>
+        <div class="toggle-sub">Kirim pengingat via WhatsApp ke semua penerima</div>
+      </div>
+      <div class="toggle on" id="ev-wa" onclick="this.classList.toggle('on')"></div>
+    </div>
+    <div class="fg"><label class="fl">Catatan (opsional)</label>
+      <textarea class="fta" id="ev-note" placeholder="cth: Belikan kue ulang tahun, reservasi restoran..."></textarea></div>
+    <div class="brow">
+      <button class="btn bcnl" onclick="closeOv('ev-form-ov')">Batal</button>
+      <button class="btn bpink" onclick="saveEvent()">💾 Simpan</button>
+    </div>
+  </div>
+</div>
+
+<!-- SELESAI CONFIRM -->
+<div class="overlay" id="done-ov" onclick="ovClose(event,'done-ov')">
+  <div class="sheet">
+    <div class="handle"></div>
+    <div class="confirm-box">
+      <div class="confirm-icon">✅</div>
+      <div class="confirm-title" id="done-title">Tandai Sudah Selesai?</div>
+      <div class="confirm-sub" id="done-sub">Deadline ini akan ditandai selesai dan reminder dihentikan.</div>
+    </div>
+    <div class="fg"><label class="fl">Tanggal Pembayaran / Diperbarui</label>
+      <input type="date" class="fi" id="done-tgl"></div>
+    <div class="fg"><label class="fl">Catatan (opsional)</label>
+      <input class="fi" id="done-note" type="text" placeholder="cth: Bayar online, biaya Rp 120.000"></div>
+    <div class="brow">
+      <button class="btn bcnl" onclick="closeOv('done-ov')">Batal</button>
+      <button class="btn bgrn" onclick="confirmDone()">✅ Tandai Selesai</button>
+    </div>
+  </div>
+</div>
+
+<!-- DATA MODAL -->
+<div class="overlay" id="data-ov" onclick="ovClose(event,'data-ov')">
+  <div class="sheet">
+    <div class="handle"></div><div class="sh-title">⚙️ Kelola Data</div>
+    <!-- Cloud sync status -->
+    <div style="background:var(--bg);border:1px solid var(--bdr);border-radius:11px;padding:13px 15px;margin-bottom:12px;display:flex;align-items:center;gap:12px;">
+      <div style="width:40px;height:40px;border-radius:11px;background:rgba(59,130,246,.12);display:flex;align-items:center;justify-content:center;font-size:19px;flex-shrink:0">☁️</div>
+      <div style="flex:1">
+        <div style="font-size:13px;font-weight:700;">Sinkronisasi Cloud</div>
+        <div id="sync-status-detail" style="font-size:11px;color:var(--mut);margin-top:2px;">Memuat...</div>
+      </div>
+      <button onclick="syncToServer(true);closeOv('data-ov')" style="background:rgba(59,130,246,.12);border:1px solid rgba(59,130,246,.3);border-radius:8px;color:#60a5fa;font-size:11px;font-weight:700;padding:7px 12px;cursor:pointer;font-family:inherit;">Sync Sekarang</button>
+    </div>
+    <div class="alist">
+      <div class="aitem" onclick="doExport()"><div class="aico" style="background:rgba(34,197,94,.12)">📤</div><div><div class="albl">Export Data</div><div class="adsc">Simpan deadline &amp; event ke file .json</div></div></div>
+      <div class="aitem" onclick="document.getElementById('file-in').click()"><div class="aico" style="background:rgba(59,130,246,.12)">📥</div><div><div class="albl">Import Data</div><div class="adsc">Muat dari file .json (data digabung)</div></div></div>
+      <div class="aitem" onclick="sendWASummary()"><div class="aico" style="background:rgba(37,211,102,.12)"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></div><div><div class="albl">Kirim Ringkasan ke WA</div><div class="adsc">Kirim semua deadline &amp; event ke semua penerima</div></div></div>
+      <div class="aitem" onclick="testNotif()"><div class="aico" style="background:rgba(245,158,11,.12)">🔔</div><div><div class="albl">Tes Notifikasi Browser</div><div class="adsc">Kirim notifikasi percobaan</div></div></div>
+      <div class="aitem" onclick="confirmClear()"><div class="aico" style="background:rgba(239,68,68,.12)">🗑️</div><div><div class="albl">Hapus Semua Data</div><div class="adsc">Kosongkan semua deadline &amp; event</div></div></div>
+    </div>
+    <div style="margin-top:14px"><button class="btn bcnl bful" onclick="closeOv('data-ov')">Tutup</button></div>
+  </div>
+</div>
+
+<!-- NOTIF MODAL -->
+<div class="overlay" id="notif-ov" onclick="ovClose(event,'notif-ov')">
+  <div class="sheet">
+    <div class="handle"></div><div class="sh-title">🔔 Notifikasi Browser</div>
+    <div style="margin-bottom:13px"><div style="background:var(--bg);border:1px solid var(--bdr);border-radius:10px;padding:12px;display:flex;gap:10px;align-items:center;">
+      <div id="ns-ico" style="font-size:20px">❓</div>
+      <div><div id="ns-txt" style="font-size:13px;font-weight:700;">Memeriksa...</div>
+      <div id="ns-sub" style="font-size:11px;color:var(--mut);margin-top:2px;"></div></div>
+    </div></div>
+    <div class="fl" style="margin-bottom:9px">Ingatkan saat tersisa:</div>
+    <div class="ntgrid">
+      <div class="ntchip on" data-d="30" onclick="togT(this)"><div class="nd">H-30</div><div class="ns">1 bulan</div></div>
+      <div class="ntchip on" data-d="14" onclick="togT(this)"><div class="nd">H-14</div><div class="ns">2 minggu</div></div>
+      <div class="ntchip on" data-d="7"  onclick="togT(this)"><div class="nd">H-7</div><div class="ns">1 minggu</div></div>
+      <div class="ntchip on" data-d="3"  onclick="togT(this)"><div class="nd">H-3</div><div class="ns">Persiapan</div></div>
+      <div class="ntchip on" data-d="1"  onclick="togT(this)"><div class="nd">H-1</div><div class="ns">Besok!</div></div>
+      <div class="ntchip on" data-d="0"  onclick="togT(this)"><div class="nd">H-0</div><div class="ns">Hari ini!</div></div>
+    </div>
+    <button class="btn bsav bful" id="btn-allow" onclick="requestNotifPermission()">🔔 Izinkan Notifikasi</button>
+    <div style="margin-top:10px"><button class="btn bcnl bful" onclick="closeOv('notif-ov')">Tutup</button></div>
+  </div>
+</div>
+
+<!-- WA SETTINGS MODAL -->
+<div class="overlay" id="wa-ov" onclick="ovClose(event,'wa-ov')">
+  <div class="sheet">
+    <div class="handle"></div>
+    <div class="sh-title"><svg width="17" height="17" viewBox="0 0 24 24" fill="#25d366"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg> Notifikasi WhatsApp</div>
+
+    <div class="fl" style="margin-bottom:9px">Pilih Layanan:</div>
+    <div class="wa-pgrid">
+      <div class="wprov active" id="prov-fonnte" onclick="selectProvider('fonnte')"><div class="wprov-ico">⚡</div><div class="wprov-name">Fonnte</div><div class="wprov-tag">25 pesan/hari gratis</div></div>
+      <div class="wprov" id="prov-callmebot" onclick="selectProvider('callmebot')"><div class="wprov-ico">🤖</div><div class="wprov-name">CallMeBot</div><div class="wprov-tag">Gratis tanpa batas</div></div>
+    </div>
+    <div class="wa-guide" id="guide-fonnte">
+      <div class="wa-guide-t">📋 Setup Fonnte</div>
+      <div class="wgs"><div class="wgn">1</div><div class="wgt">Buka <a href="https://fonnte.com" target="_blank">fonnte.com</a> → Daftar gratis</div></div>
+      <div class="wgs"><div class="wgn">2</div><div class="wgt"><b>Add Device</b> → scan QR dengan WA kamu</div></div>
+      <div class="wgs"><div class="wgn">3</div><div class="wgt">Menu <b>Token</b> → salin token</div></div>
+    </div>
+    <div class="wa-guide hidden" id="guide-callmebot">
+      <div class="wa-guide-t">📋 Setup CallMeBot</div>
+      <div class="wgs"><div class="wgn">1</div><div class="wgt">Dari WA kirim ke <b>+34 644 60 49 48</b></div></div>
+      <div class="wgs"><div class="wgn">2</div><div class="wgt">Ketik: <b>I allow callmebot to send me messages</b></div></div>
+      <div class="wgs"><div class="wgn">3</div><div class="wgt">Dapat balasan berisi <b>API Key</b></div></div>
+    </div>
+
+    <div id="field-token" class="fg"><label class="fl">API Token Fonnte</label>
+      <input class="fi" id="wa-token" type="text" placeholder="Paste token dari dashboard Fonnte"></div>
+    <div id="field-apikey" class="fg hidden"><label class="fl">API Key CallMeBot</label>
+      <input class="fi" id="wa-apikey" type="text" placeholder="cth: 1234567"></div>
+
+    <!-- 2 RECIPIENTS -->
+    <div class="recip-block">
+      <div class="recip-title">👥 Penerima Notifikasi</div>
+      <div class="recip-row">
+        <div class="recip-icon ri-me">🧑</div>
+        <div class="recip-fields">
+          <input class="recip-name-input" id="recip-name-me" type="text" placeholder="Nama (cth: Saya)" value="Saya">
+          <div class="recip-num-row">
+            <input class="recip-num fi" id="recip-phone-me" type="tel" placeholder="6281234567890" style="font-size:12px;padding:7px 10px;">
+            <div class="recip-toggle on" id="recip-tog-me" onclick="this.classList.toggle('on')" title="Aktifkan/nonaktifkan"></div>
+          </div>
+        </div>
+      </div>
+      <div class="recip-row">
+        <div class="recip-icon ri-wife">👩</div>
+        <div class="recip-fields">
+          <input class="recip-name-input" id="recip-name-wife" type="text" placeholder="Nama (cth: Istri)" value="Istri">
+          <div class="recip-num-row">
+            <input class="recip-num fi" id="recip-phone-wife" type="tel" placeholder="6281234567890" style="font-size:12px;padding:7px 10px;">
+            <div class="recip-toggle" id="recip-tog-wife" onclick="this.classList.toggle('on')" title="Aktifkan/nonaktifkan"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="wa-status">
+      <div class="wsdot idle" id="wsdot"></div>
+      <div><div class="ws-t" id="ws-t">Belum dikonfigurasi</div><div class="ws-s" id="ws-s">Isi form & simpan untuk mengaktifkan</div></div>
+    </div>
+
+    <div class="fl" style="margin-bottom:9px">Kirim WA saat tersisa:</div>
+    <div class="ntgrid" id="wa-thresholds">
+      <div class="ntchip on" data-d="30" onclick="togWT(this)"><div class="nd">H-30</div><div class="ns">1 bulan</div></div>
+      <div class="ntchip on" data-d="14" onclick="togWT(this)"><div class="nd">H-14</div><div class="ns">2 minggu</div></div>
+      <div class="ntchip on triple" data-d="7" onclick="togWT(this)"><div class="nd">H-7</div><div class="ns">1 minggu</div><div class="triple-badge">3x/hari</div></div>
+      <div class="ntchip on" data-d="3"  onclick="togWT(this)"><div class="nd">H-3</div><div class="ns">Persiapan</div></div>
+      <div class="ntchip on" data-d="1"  onclick="togWT(this)"><div class="nd">H-1</div><div class="ns">Besok!</div></div>
+      <div class="ntchip on" data-d="0"  onclick="togWT(this)"><div class="nd">H-0</div><div class="ns">Hari ini!</div></div>
+    </div>
+    <div style="background:rgba(236,72,153,.07);border:1px solid rgba(236,72,153,.2);border-radius:10px;padding:10px 12px;margin-bottom:13px;font-size:11px;color:var(--mut);line-height:1.6;">
+      🎂 <b style="color:#f472b6">Hari Penting</b> juga mendapat WA otomatis (aktifkan per event). H-7 deadline dikirim <b style="color:#fbbf24">3x/hari</b>.
+    </div>
+    <div class="brow">
+      <button class="btn bcnl" onclick="testWA()">🧪 Tes Kirim</button>
+      <button class="btn bwa" onclick="saveWAConfig()">💾 Simpan</button>
+    </div>
+    <div style="margin-top:10px"><button class="btn bcnl bful" onclick="closeOv('wa-ov')">Tutup</button></div>
+  </div>
+</div>
+
+<script>const WA_SVG='<svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"currentColor\"><path d=\"M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z\"/></svg>';
+
+
+// ═══════════════════════════════════════════
+// STATE
+// ═══════════════════════════════════════════
+let entries  = JSON.parse(localStorage.getItem('ps-entries') || '[]');
+let events   = JSON.parse(localStorage.getItem('ps-events')  || '[]');
+let settings = JSON.parse(localStorage.getItem('ps-cfg') || JSON.stringify({
+  thresholds:[30,14,7,3,1,0],lastChecked:null,
+  waThresholds:[30,14,7,3,1,0],waH7Sessions:{}
+}));
+let waConfig = JSON.parse(localStorage.getItem('ps-wa') || JSON.stringify({
+  provider:'fonnte',token:'',apikey:'',
+  recipients:[
+    {id:'me',  label:'Saya',  phone:'',active:true},
+    {id:'wife',label:'Istri', phone:'',active:false}
+  ],
+  active:false
+}));
+
+let editingId=null, editingEvId=null;
+let curType='pajak', curTab='deadline', curFilter='semua', curEvType='ulang-tahun';
+let deferredPrompt=null, stepsShown=false, curProvider='fonnte';
+let pendingDoneId=null;
+
+// ═══════════════════════════════════════════
+// PWA
+// ═══════════════════════════════════════════
+(function(){
+  const mBlob=new Blob([JSON.stringify({"name": "PajakSIM Tracker", "short_name": "PajakSIM", "description": "Catat dan pantau deadline pajak kendaraan & perpanjangan SIM", "start_url": "/index.html", "display": "standalone", "orientation": "portrait", "background_color": "#0c0f1a", "theme_color": "#3b82f6", "lang": "id", "categories": ["utilities", "productivity"], "icons": [{"src": "/icons/icon-72.png", "sizes": "72x72", "type": "image/png", "purpose": "any maskable"}, {"src": "/icons/icon-96.png", "sizes": "96x96", "type": "image/png", "purpose": "any maskable"}, {"src": "/icons/icon-128.png", "sizes": "128x128", "type": "image/png", "purpose": "any maskable"}, {"src": "/icons/icon-144.png", "sizes": "144x144", "type": "image/png", "purpose": "any maskable"}, {"src": "/icons/icon-152.png", "sizes": "152x152", "type": "image/png", "purpose": "any maskable"}, {"src": "/icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any maskable"}, {"src": "/icons/icon-384.png", "sizes": "384x384", "type": "image/png", "purpose": "any maskable"}, {"src": "/icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable"}], "shortcuts": [{"name": "Tambah Pajak", "short_name": "Pajak", "description": "Tambah deadline pajak kendaraan baru", "url": "/index.html?add=pajak", "icons": [{"src": "/icons/icon-96.png", "sizes": "96x96"}]}, {"name": "Tambah SIM", "short_name": "SIM", "description": "Tambah deadline perpanjangan SIM baru", "url": "/index.html?add=sim", "icons": [{"src": "/icons/icon-96.png", "sizes": "96x96"}]}]})],{type:'application/manifest+json'});
+  document.getElementById('manifest-link').href=URL.createObjectURL(mBlob);
+  if('serviceWorker' in navigator){
+    const isHTTPS=location.protocol==='https:';
+    const p=isHTTPS
+      ? navigator.serviceWorker.register('/sw.js',{scope:'/'})
+      : navigator.serviceWorker.register(URL.createObjectURL(new Blob([`const CACHE_NAME = 'pajaksim-v1';
+const ASSETS = ['/', '/index.html', '/manifest.json'];
+
+// Install
+self.addEventListener('install', e => {
+  e.waitUntil(caches.open(CACHE_NAME).then(c => c.addAll(ASSETS)));
+  self.skipWaiting();
+});
+
+// Activate
+self.addEventListener('activate', e => {
+  e.waitUntil(clients.claim());
+});
+
+// Fetch - cache first
+self.addEventListener('fetch', e => {
+  e.respondWith(
+    caches.match(e.request).then(r => r || fetch(e.request))
+  );
+});
+
+// --- Notification scheduler ---
+// Called by the app periodically via postMessage
+self.addEventListener('message', e => {
+  if (e.data && e.data.type === 'CHECK_DEADLINES') {
+    checkAndNotify(e.data.entries);
+  }
+});
+
+// Push notification (from server - optional)
+self.addEventListener('push', e => {
+  const data = e.data ? e.data.json() : {};
+  e.waitUntil(
+    self.registration.showNotification(data.title || 'PajakSIM Tracker', {
+      body: data.body || 'Ada deadline yang perlu diperhatikan!',
+      icon: '/icons/icon-192.png',
+      badge: '/icons/icon-72.png',
+      tag: data.tag || 'pajaksim',
+      renotify: true,
+      requireInteraction: true,
+      data: { url: '/' }
+    })
+  );
+});
+
+// Notification click
+self.addEventListener('notificationclick', e => {
+  e.notification.close();
+  e.waitUntil(
+    clients.matchAll({ type: 'window', includeUncontrolled: true }).then(list => {
+      if (list.length > 0) return list[0].focus();
+      return clients.openWindow('/');
+    })
+  );
+});
+
+// Periodic background sync (if supported)
+self.addEventListener('periodicsync', e => {
+  if (e.tag === 'check-deadlines') {
+    e.waitUntil(checkFromStorage());
+  }
+});
+
+async function checkFromStorage() {
+  // Read entries from cache/IDB if available
+  // This is a simplified check - main logic is in the app
+  const cache = await caches.open(CACHE_NAME);
+  // Notify via broadcast
+  const allClients = await clients.matchAll();
+  allClients.forEach(c => c.postMessage({ type: 'REQUEST_CHECK' }));
+}
+
+function checkAndNotify(entries) {
+  if (!entries || !Array.isArray(entries)) return;
+
+  const today = new Date();
+  today.setHours(0, 0, 0, 0);
+  const todayStr = today.toISOString().split('T')[0];
+
+  // Check already notified today
+  const notifiedKey = 'notified_' + todayStr;
+
+  entries.forEach(entry => {
+    const target = new Date(entry.tanggal + 'T00:00:00');
+    target.setHours(0, 0, 0, 0);
+    const diffMs = target - today;
+    const days = Math.round(diffMs / 86400000);
+
+    const thresholds = [30, 14, 7, 3, 1, 0];
+    if (!thresholds.includes(days)) return;
+
+    const notifId = \`\${entry.id}_\${days}\`;
+
+    // Use tag to avoid duplicate per entry per threshold
+    const typeLabel = entry.type === 'pajak' ? '🚙 Pajak Kendaraan' : '🪪 Perpanjangan SIM';
+    let title, body, urgency;
+
+    if (days === 0) {
+      title = \`⚠️ HARI INI! \${typeLabel}\`;
+      body = \`\${entry.nama} jatuh tempo HARI INI! Segera urus sekarang.\`;
+      urgency = 'high';
+    } else if (days === 1) {
+      title = \`🔴 BESOK! \${typeLabel}\`;
+      body = \`\${entry.nama} jatuh tempo BESOK (\${formatDate(entry.tanggal)}). Jangan sampai terlambat!\`;
+      urgency = 'high';
+    } else if (days <= 3) {
+      title = \`🔴 \${days} Hari Lagi — \${typeLabel}\`;
+      body = \`\${entry.nama} jatuh tempo \${formatDate(entry.tanggal)}. Persiapkan segera!\`;
+      urgency = 'high';
+    } else if (days <= 7) {
+      title = \`🟡 \${days} Hari Lagi — \${typeLabel}\`;
+      body = \`\${entry.nama} jatuh tempo \${formatDate(entry.tanggal)}.\`;
+      urgency = 'normal';
+    } else {
+      title = \`📅 \${days} Hari Lagi — \${typeLabel}\`;
+      body = \`\${entry.nama} jatuh tempo \${formatDate(entry.tanggal)}.\`;
+      urgency = 'low';
+    }
+
+    const actions = [];
+    if (days <= 7) {
+      actions.push({ action: 'ok', title: 'Lihat Detail' });
+    }
+
+    self.registration.showNotification(title, {
+      body,
+      icon: '/icons/icon-192.png',
+      badge: '/icons/icon-72.png',
+      tag: notifId,
+      renotify: false,
+      requireInteraction: days <= 1,
+      silent: urgency === 'low',
+      vibrate: urgency === 'high' ? [200, 100, 200, 100, 400] : [200, 100, 200],
+      actions,
+      data: { entryId: entry.id, url: '/' },
+      timestamp: Date.now()
+    });
+  });
+}
+
+function formatDate(dateStr) {
+  const d = new Date(dateStr + 'T00:00:00');
+  return d.toLocaleDateString('id-ID', { day: '2-digit', month: 'long', year: 'numeric' });
+}
+`],{type:'application/javascript'})),{scope:'/'});
+    p.then(r=>{
+      navigator.serviceWorker.addEventListener('message',e=>{if(e.data?.type==='REQUEST_CHECK')checkBrowserDeadlines();});
+      if('periodicSync' in r)navigator.permissions.query({name:'periodic-background-sync'}).then(s=>{if(s.state==='granted')r.periodicSync.register('check-deadlines',{minInterval:12*60*60*1000});}).catch(()=>{});
+    }).catch(e=>console.warn('SW:',e));
+  }
+  window.addEventListener('beforeinstallprompt',e=>{
+    e.preventDefault();deferredPrompt=e;
+    document.getElementById('install-ico').textContent='⬇️';
+    document.getElementById('install-txt').textContent='Install Sekarang';
+  });
+  window.addEventListener('appinstalled',()=>{dismissInstall();showToast('App berhasil diinstall! 🎉');});
+  if(window.matchMedia('(display-mode:standalone)').matches||navigator.standalone)dismissInstall();
+  detectBrowser();
+})();
+
+function detectBrowser(){
+  if(localStorage.getItem('install-dismissed')==='1')document.getElementById('install-card').classList.add('hidden');
+  if(/iPhone|iPad|iPod/i.test(navigator.userAgent))document.getElementById('install-txt').textContent='Cara Install di iPhone';
+}
+function handleInstallBtn(){
+  if(deferredPrompt){deferredPrompt.prompt();deferredPrompt.userChoice.then(r=>{if(r.outcome==='accepted')dismissInstall();});return;}
+  const ua=navigator.userAgent;
+  const id=/iPhone|iPad|iPod/i.test(ua)?'steps-ios':/SamsungBrowser/i.test(ua)?'steps-samsung':'steps-chrome';
+  stepsShown=!stepsShown;
+  ['steps-chrome','steps-ios','steps-samsung'].forEach(s=>document.getElementById(s).classList.remove('show'));
+  if(stepsShown)document.getElementById(id).classList.add('show');
+  document.getElementById('install-ico').textContent=stepsShown?'🔼':'📲';
+  document.getElementById('install-txt').textContent=stepsShown?'Sembunyikan':'Cara Install';
+}
+function dismissInstall(){localStorage.setItem('install-dismissed','1');document.getElementById('install-card').classList.add('hidden');}
+
+// ═══════════════════════════════════════════
+// TABS
+// ═══════════════════════════════════════════
+function switchTab(t){
+  curTab=t;
+  document.querySelectorAll('.tab').forEach(el=>el.classList.remove('active'));
+  document.getElementById('tab-'+t).classList.add('active');
+  document.getElementById('filt-deadline').classList.toggle('hidden',t!=='deadline');
+  document.getElementById('filt-event').classList.toggle('hidden',t!=='event');
+  document.getElementById('sum-bar-deadline').classList.toggle('hidden',t!=='deadline');
+  document.getElementById('sum-bar-event').classList.toggle('hidden',t!=='event');
+  if(t==='deadline'){
+    document.querySelector('.fab').className='fab fab-deadline';
+    document.querySelector('.fab').innerHTML='＋ Tambah Deadline';
+    document.querySelector('.fab').onclick=()=>openForm();
+    curFilter='semua';
+    document.querySelectorAll('#filt-deadline .fpill').forEach((p,i)=>{p.classList.toggle('active',i===0);});
+  } else {
+    document.querySelector('.fab').className='fab fab-event';
+    document.querySelector('.fab').innerHTML='＋ Tambah Event';
+    document.querySelector('.fab').onclick=()=>openEventForm();
+    curFilter='semua-ev';
+    document.querySelectorAll('#filt-event .fpill').forEach((p,i)=>{p.classList.toggle('active',i===0);});
+  }
+  render();
+}
+
+// ═══════════════════════════════════════════
+// EVENTS - Ulang Tahun & Hari Penting
+// ═══════════════════════════════════════════
+const EV_TYPES = {
+  'ulang-tahun': {label:'Ulang Tahun',icon:'🎂',badge:'be',color:'#f472b6'},
+  'anniversary': {label:'Anniversary',icon:'💍',badge:'be',color:'#f472b6'},
+  'hari-penting':{label:'Hari Penting',icon:'⭐',badge:'bb',color:'#fbbf24'},
+  'lainnya':     {label:'Lainnya',icon:'📅',badge:'bb',color:'#a78bfa'},
+};
+
+function getEvDays(ev){
+  // For yearly events: calculate days to next occurrence
+  const today = new Date(); today.setHours(0,0,0,0);
+  const base = new Date(ev.date+'T00:00:00'); base.setHours(0,0,0,0);
+  if(!ev.yearly){
+    return Math.round((base - today)/86400000);
+  }
+  // Yearly: find next occurrence
+  let next = new Date(today.getFullYear(), base.getMonth(), base.getDate());
+  next.setHours(0,0,0,0);
+  if(next < today) next.setFullYear(today.getFullYear()+1);
+  return Math.round((next - today)/86400000);
+}
+
+function getEvNextDate(ev){
+  if(!ev.yearly) return ev.date;
+  const today = new Date(); today.setHours(0,0,0,0);
+  const base = new Date(ev.date+'T00:00:00');
+  let next = new Date(today.getFullYear(), base.getMonth(), base.getDate());
+  next.setHours(0,0,0,0);
+  if(next < today) next.setFullYear(today.getFullYear()+1);
+  // Use local date to avoid UTC offset shifting the date back 1 day
+  const y=next.getFullYear(), m=String(next.getMonth()+1).padStart(2,'0'), d=String(next.getDate()).padStart(2,'0');
+  return y+'-'+m+'-'+d;
+}
+
+function getEvStatus(days){
+  if(days < 0) return 'ev-done';
+  if(days <= 7) return 'ev-d';
+  if(days <= 30) return 'ev-w';
+  return 'ev-s';
+}
+
+function openEventForm(id=null){
+  editingEvId=id;
+  document.getElementById('ev-form-title').textContent=id?'Edit Event':'Tambah Event';
+  if(id){
+    const ev=events.find(x=>x.id===id);
+    setEvType(ev.type||'ulang-tahun');
+    document.getElementById('ev-nama').value=ev.nama;
+    document.getElementById('ev-date').value=ev.date;
+    document.getElementById('ev-note').value=ev.note||'';
+    document.getElementById('ev-yearly').classList.toggle('on',!!ev.yearly);
+    document.getElementById('ev-wa').classList.toggle('on',ev.sendWA!==false);
+  } else {
+    setEvType('ulang-tahun');
+    ['ev-nama','ev-note'].forEach(i=>document.getElementById(i).value='');
+    document.getElementById('ev-date').value='';
+    document.getElementById('ev-yearly').classList.add('on');
+    document.getElementById('ev-wa').classList.add('on');
+  }
+  document.getElementById('ev-form-ov').classList.add('open');
+}
+
+function setEvType(t){
+  curEvType=t;
+  document.querySelectorAll('.ev-type-btn').forEach(b=>b.classList.toggle('active',b.dataset.t===t));
+}
+
+function saveEvent(){
+  const nama=document.getElementById('ev-nama').value.trim();
+  const date=document.getElementById('ev-date').value;
+  if(!nama){showToast('Masukkan nama event!','⚠️');return;}
+  if(!date){showToast('Pilih tanggal!','⚠️');return;}
+  const yearly=document.getElementById('ev-yearly').classList.contains('on');
+  const sendWA=document.getElementById('ev-wa').classList.contains('on');
+  const note=document.getElementById('ev-note').value.trim();
+  const obj={type:curEvType,nama,date,yearly,sendWA,note};
+  if(editingEvId){
+    const i=events.findIndex(x=>x.id===editingEvId);
+    events[i]={...events[i],...obj};
+    showToast('Event diperbarui ✏️');
+  } else {
+    events.push({id:genId(),...obj});
+    showToast('Event ditambahkan! 🎉');
+  }
+  saveEvents();render();closeOv('ev-form-ov');
+  setTimeout(checkWAEvents,500);
+}
+
+function delEvent(id){
+  if(!confirm('Hapus event ini?'))return;
+  events=events.filter(e=>e.id!==id);
+  saveEvents();render();showToast('Event dihapus','🗑️');
+}
+
+function saveEvents(){localStorage.setItem('ps-events',JSON.stringify(events));syncToServer();}
+
+// ═══════════════════════════════════════════
+// SELESAI (Deadline)
+// ═══════════════════════════════════════════
+function openDoneModal(id){
+  const e=entries.find(x=>x.id===id);if(!e)return;
+  pendingDoneId=id;
+  const isPaid=!!e.paidAt;
+  const typeName=e.type==='pajak'?'Pajak':'SIM';
+  document.getElementById('done-title').textContent=isPaid?'Perbarui Status Selesai?':'Tandai Sudah Selesai?';
+  document.getElementById('done-sub').textContent=isPaid
+    ?e.nama+' sudah selesai pada '+fmtD(e.paidAt)+'. Perbarui?'
+    :typeName+' '+e.nama+' akan ditandai selesai. Reminder dihentikan.';
+  document.getElementById('done-tgl').value=new Date().toISOString().split('T')[0];
+  document.getElementById('done-note').value=e.paidNote||'';
+  document.getElementById('done-ov').classList.add('open');
+}
+function confirmDone(){
+  if(!pendingDoneId)return;
+  const idx=entries.findIndex(x=>x.id===pendingDoneId);if(idx===-1)return;
+  const paidAt=document.getElementById('done-tgl').value;
+  const paidNote=document.getElementById('done-note').value.trim();
+  entries[idx].paidAt=paidAt;entries[idx].paidNote=paidNote;entries[idx].done=true;
+  save();render();closeOv('done-ov');showToast('Ditandai selesai! Reminder dihentikan ✅');
+  if(waConfig.active){
+    const e=entries[idx];
+    const typeName=e.type==='pajak'?'🚙 Pajak Kendaraan':'🪪 Perpanjangan SIM';
+    const sub=e.type==='pajak'?e.plat:e.sim;
+    sendWAToAll('✅ *SELESAI — PajakSIM Tracker*\n\n'+typeName+': *'+e.nama+'*'+(sub?' ('+sub+')':'')+'\n📅 Diselesaikan: *'+fmtD(paidAt)+'*'+(paidNote?'\n📝 '+paidNote:'')+'\n\nReminder untuk item ini sudah dihentikan. ✅');
+  }
+  pendingDoneId=null;
+}
+function undoDone(id){
+  if(!confirm('Aktifkan kembali reminder?'))return;
+  const idx=entries.findIndex(x=>x.id===id);if(idx===-1)return;
+  delete entries[idx].paidAt;delete entries[idx].paidNote;delete entries[idx].done;
+  save();render();showToast('Reminder diaktifkan kembali 🔔');
+}
+
+// ═══════════════════════════════════════════
+// WHATSAPP - MULTI RECIPIENT
+// ═══════════════════════════════════════════
+function openWASheet(){
+  curProvider=waConfig.provider||'fonnte';
+  selectProvider(curProvider,true);
+  document.getElementById('wa-token').value=waConfig.token||'';
+  document.getElementById('wa-apikey').value=waConfig.apikey||'';
+  // Recipients
+  const recips=waConfig.recipients||[];
+  recips.forEach(r=>{
+    const phoneEl=document.getElementById('recip-phone-'+r.id);
+    const nameEl=document.getElementById('recip-name-'+r.id);
+    const togEl=document.getElementById('recip-tog-'+r.id);
+    if(phoneEl)phoneEl.value=r.phone||'';
+    if(nameEl)nameEl.value=r.label||'';
+    if(togEl)togEl.classList.toggle('on',r.active!==false);
+  });
+  document.querySelectorAll('#wa-thresholds .ntchip').forEach(c=>
+    c.classList.toggle('on',(settings.waThresholds||[30,14,7,3,1,0]).includes(parseInt(c.dataset.d))));
+  updateWAStatus();
+  document.getElementById('wa-ov').classList.add('open');
+}
+
+function selectProvider(p,silent=false){
+  curProvider=p;
+  document.getElementById('prov-fonnte').classList.toggle('active',p==='fonnte');
+  document.getElementById('prov-callmebot').classList.toggle('active',p==='callmebot');
+  document.getElementById('guide-fonnte').classList.toggle('hidden',p!=='fonnte');
+  document.getElementById('guide-callmebot').classList.toggle('hidden',p==='fonnte');
+  document.getElementById('field-token').classList.toggle('hidden',p!=='fonnte');
+  document.getElementById('field-apikey').classList.toggle('hidden',p!=='callmebot');
+}
+
+function updateWAStatus(){
+  const dot=document.getElementById('wsdot'),t=document.getElementById('ws-t'),s=document.getElementById('ws-s');
+  const waDot=document.getElementById('wa-dot'),banner=document.getElementById('wa-banner');
+  const actives=(waConfig.recipients||[]).filter(r=>r.active&&r.phone);
+  if(waConfig.active && actives.length>0){
+    dot.className='wsdot ok';t.textContent='WhatsApp Aktif ✅';
+    s.textContent=(waConfig.provider==='fonnte'?'Fonnte':'CallMeBot')+' • '+actives.length+' penerima aktif';
+    waDot.classList.remove('on');document.getElementById('btn-wa').classList.add('wa-on');banner.classList.add('hidden');
+  }else{
+    dot.className='wsdot idle';t.textContent='Belum dikonfigurasi';
+    s.textContent='Isi form & simpan untuk mengaktifkan';
+    waDot.classList.add('on');document.getElementById('btn-wa').classList.remove('wa-on');banner.classList.remove('hidden');
+  }
+}
+
+function togWT(el){
+  el.classList.toggle('on');const v=parseInt(el.dataset.d);
+  settings.waThresholds=settings.waThresholds||[30,14,7,3,1,0];
+  settings.waThresholds=el.classList.contains('on')?[...settings.waThresholds,v]:settings.waThresholds.filter(x=>x!==v);
+  localStorage.setItem('ps-cfg',JSON.stringify(settings));
+}
+
+async function saveWAConfig(){
+  const p=curProvider;
+  const token=document.getElementById('wa-token').value.trim();
+  const apikey=document.getElementById('wa-apikey').value.trim();
+  if(p==='fonnte'&&!token){showToast('Masukkan API Token Fonnte','⚠️');return;}
+  if(p==='callmebot'&&!apikey){showToast('Masukkan API Key CallMeBot','⚠️');return;}
+  // Read recipients
+  const recips=[
+    {id:'me',  label:document.getElementById('recip-name-me').value.trim()||'Saya',  phone:document.getElementById('recip-phone-me').value.trim().replace(/\D/g,''),  active:document.getElementById('recip-tog-me').classList.contains('on')},
+    {id:'wife',label:document.getElementById('recip-name-wife').value.trim()||'Istri',phone:document.getElementById('recip-phone-wife').value.trim().replace(/\D/g,''),active:document.getElementById('recip-tog-wife').classList.contains('on')},
+  ];
+  const hasActive=recips.some(r=>r.active&&r.phone);
+  if(!hasActive){showToast('Minimal 1 nomor aktif dengan nomor WA','⚠️');return;}
+  waConfig={provider:p,token,apikey,recipients:recips,active:true};
+  localStorage.setItem('ps-wa',JSON.stringify(waConfig));
+  settings.waH7Sessions={};
+  syncToServer(true);localStorage.setItem('ps-cfg',JSON.stringify(settings));
+  updateWAStatus();showToast('Konfigurasi WA disimpan ✅');
+}
+
+async function sendWAToOne(recipient, msg){
+  if(!waConfig.active||!recipient.active||!recipient.phone)return false;
+  try{
+    if(waConfig.provider==='fonnte'){
+      const r=await fetch('https://api.fonnte.com/send',{
+        method:'POST',headers:{'Authorization':waConfig.token,'Content-Type':'application/json'},
+        body:JSON.stringify({target:recipient.phone,message:msg})
+      });
+      const d=await r.json();return d.status===true||d.status==='true';
+    }else{
+      const r=await fetch('https://api.callmebot.com/whatsapp.php?phone='+recipient.phone+'&text='+encodeURIComponent(msg)+'&apikey='+waConfig.apikey);
+      return r.ok;
+    }
+  }catch(e){console.warn('WA:',e);return false;}
+}
+
+async function sendWAToAll(msg){
+  if(!waConfig.active)return false;
+  const recips=(waConfig.recipients||[]).filter(r=>r.active&&r.phone);
+  const results=await Promise.all(recips.map(r=>sendWAToOne(r,msg)));
+  return results.some(Boolean);
+}
+
+function getH7Session(){
+  const h=new Date().getHours();
+  if(h>=6&&h<11)return 'morning';
+  if(h>=12&&h<14)return 'afternoon';
+  if(h>=17&&h<20)return 'evening';
+  return null;
+}
+
+async function checkWADeadlines(){
+  if(!waConfig.active)return;
+  const _td=new Date();
+  const today=_td.getFullYear()+'-'+String(_td.getMonth()+1).padStart(2,'0')+'-'+String(_td.getDate()).padStart(2,'0');
+  const thresholds=settings.waThresholds||[30,14,7,3,1,0];
+  if(!settings.waH7Sessions)settings.waH7Sessions={};
+  let msgs=[],h7Msgs=[];
+  entries.forEach(e=>{
+    if(e.done)return;
+    const days=getDays(e.tgl);
+    const typeName=e.type==='pajak'?'🚙 Pajak Kendaraan':'🪪 Perpanjangan SIM';
+    const sub=e.type==='pajak'?(e.plat||''):(e.sim||'');
+    if(days!==7&&thresholds.includes(days)){
+      const key=e.id+'_'+days+'_'+today;
+      if(!settings.waH7Sessions[key]){
+        settings.waH7Sessions[key]=true;
+        const icon=days===0?'⚠️':days===1?'🔴':days<=3?'🔴':'🟡';
+        msgs.push(icon+' '+(days===0?'*HARI INI!*':days===1?'*BESOK!*':'*'+days+' hari lagi*')+'\n'+typeName+': *'+e.nama+'*'+(sub?' ('+sub+')':'')+'\nDeadline: '+fmtD(e.tgl));
+      }
+    }
+    if(days===7&&thresholds.includes(7)){
+      const session=getH7Session();
+      if(session){
+        const key=e.id+'_7_'+today+'_'+session;
+        if(!settings.waH7Sessions[key]){
+          settings.waH7Sessions[key]=true;
+          const sLabel=session==='morning'?'🌅 Pagi':session==='afternoon'?'☀️ Siang':'🌆 Sore';
+          h7Msgs.push('🟡 *7 hari lagi* ['+sLabel+']\n'+typeName+': *'+e.nama+'*'+(sub?' ('+sub+')':'')+'\nDeadline: '+fmtD(e.tgl));
+        }
+      }
+    }
+  });
+  if(msgs.length>0) await sendWAToAll('🚗 *PajakSIM Tracker — Pengingat Deadline*\n\n'+msgs.join('\n\n'));
+  if(h7Msgs.length>0) await sendWAToAll('🚗 *PajakSIM Tracker — H-7*\n\n'+h7Msgs.join('\n\n')+'\n\n_Pesan 3x/hari karena kurang 7 hari._');
+  Object.keys(settings.waH7Sessions).forEach(k=>{if(!k.includes(today))delete settings.waH7Sessions[k];});
+  localStorage.setItem('ps-cfg',JSON.stringify(settings));
+}
+
+async function checkWAEvents(){
+  if(!waConfig.active)return;
+  const _tn=new Date();
+  const today=_tn.getFullYear()+'-'+String(_tn.getMonth()+1).padStart(2,'0')+'-'+String(_tn.getDate()).padStart(2,'0');
+  if(!settings.waH7Sessions)settings.waH7Sessions={};
+  const thresholds=settings.waThresholds||[30,14,7,3,1,0];
+  let evMsgs=[];
+  events.forEach(ev=>{
+    if(ev.sendWA===false)return;
+    const days=getEvDays(ev);
+    const nextDate=getEvNextDate(ev);
+    if(!thresholds.includes(days)&&days!==0)return;
+    const key='ev_'+ev.id+'_'+days+'_'+today;
+    if(settings.waH7Sessions[key])return;
+    settings.waH7Sessions[key]=true;
+    const t=EV_TYPES[ev.type]||EV_TYPES['lainnya'];
+    const icon=days===0?'🎉':days===1?'⏰':days<=7?'📅':'🗓️';
+    const urgency=days===0?'*HARI INI!*':days===1?'*BESOK!*':'*'+days+' hari lagi*';
+    let msg=icon+' '+urgency+'\n'+t.icon+' *'+ev.nama+'*';
+    if(ev.yearly){
+      const base=new Date(ev.date+'T00:00:00');
+      const thisYear=new Date().getFullYear();
+      const age=thisYear-base.getFullYear();
+      if(age>0&&(ev.type==='ulang-tahun'||ev.type==='anniversary'))msg+='\n🎈 '+age+' tahun';
+    }
+    msg+='\n📅 '+fmtD(nextDate);
+    evMsgs.push(msg);
+  });
+  if(evMsgs.length>0){
+    await sendWAToAll('🎊 *PajakSIM Tracker — Pengingat Hari Penting*\n\n'+evMsgs.join('\n\n'));
+  }
+  Object.keys(settings.waH7Sessions).forEach(k=>{if(!k.includes(today))delete settings.waH7Sessions[k];});
+  localStorage.setItem('ps-cfg',JSON.stringify(settings));
+}
+
+async function testWA(){
+  await saveWAConfig();if(!waConfig.active)return;
+  showToast('Mengirim tes WA...','⏳');
+  const recips=(waConfig.recipients||[]).filter(r=>r.active&&r.phone);
+  let sent=0;
+  for(const r of recips){
+    const ok=await sendWAToOne(r,'🚗 *PajakSIM Tracker — Tes Notifikasi*\n\nHalo '+r.label+'! Notifikasi WA berhasil dikirim.\n✅ Fitur Selesai aktif\n⏰ H-7: 3x/hari\n🎂 Reminder hari penting aktif');
+    if(ok)sent++;
+  }
+  showToast(sent>0?'Terkirim ke '+sent+' penerima ✅':'Gagal kirim. Cek konfigurasi','❌');
+}
+
+async function sendEntryWA(id){
+  const e=entries.find(x=>x.id===id);if(!e)return;
+  const days=getDays(e.tgl);
+  const typeName=e.type==='pajak'?'🚙 Pajak Kendaraan':'🪪 Perpanjangan SIM';
+  const sub=e.type==='pajak'?e.plat:e.sim;
+  const icon=days<0?'⚫':days===0?'⚠️':days<=7?'🔴':days<=30?'🟡':'🟢';
+  const dstr=days<0?Math.abs(days)+' hari lalu (KADALUARSA)':days===0?'HARI INI!':days===1?'Besok!':days+' hari lagi';
+  const msg=icon+' *Pengingat Deadline*\n\n'+typeName+': *'+e.nama+'*'+(sub?' ('+sub+')':'')+'\n📅 Deadline: *'+fmtD(e.tgl)+'*\n⏳ Sisa: *'+dstr+'*'+(e.note?'\n📝 '+e.note:'')+'\n\n_PajakSIM Tracker_';
+  if(waConfig.active){
+    showToast('Mengirim ke WA...','⏳');
+    const ok=await sendWAToAll(msg);
+    showToast(ok?'WA terkirim ke semua penerima ✅':'Gagal kirim WA','❌');
+  }else{
+    window.open('https://wa.me/?text='+encodeURIComponent(msg.replace(/\*/g,'').replace(/_/g,'')),'_blank');
+  }
+}
+
+async function sendEventWA(id){
+  const ev=events.find(x=>x.id===id);if(!ev)return;
+  const days=getEvDays(ev);const nextDate=getEvNextDate(ev);
+  const t=EV_TYPES[ev.type]||EV_TYPES['lainnya'];
+  const dstr=days===0?'HARI INI! 🎉':days===1?'Besok!':days+' hari lagi';
+  let msg=t.icon+' *'+t.label+'*\n*'+ev.nama+'*\n📅 '+fmtD(nextDate)+' — '+dstr;
+  if(ev.yearly){
+    const base=new Date(ev.date+'T00:00:00');
+    const age=new Date().getFullYear()-base.getFullYear();
+    if(age>0)msg+='\n🎈 '+age+' tahun';
+  }
+  if(ev.note)msg+='\n📝 '+ev.note;
+  msg+='\n\n_PajakSIM Tracker_';
+  if(waConfig.active){
+    showToast('Mengirim ke WA...','⏳');
+    const ok=await sendWAToAll(msg);
+    showToast(ok?'WA terkirim ✅':'Gagal kirim','❌');
+  }else{
+    window.open('https://wa.me/?text='+encodeURIComponent(msg.replace(/\*/g,'').replace(/_/g,'')),'_blank');
+  }
+}
+
+function sendWASummary(){
+  closeOv('data-ov');if(!entries.length&&!events.length){showToast('Tidak ada data','⚠️');return;}
+  const activeD=entries.filter(e=>!e.done).sort((a,b)=>getDays(a.tgl)-getDays(b.tgl));
+  const done=entries.filter(e=>e.done);
+  const evList=events.filter(ev=>!ev.done).sort((a,b)=>getEvDays(a)-getEvDays(b));
+  let msg='🚗 *PajakSIM Tracker — Ringkasan*\n\n';
+  if(activeD.length){
+    msg+='*📋 DEADLINE*\n';
+    activeD.forEach(e=>{
+      const d=getDays(e.tgl);const icon=d<0?'⚫':d<=7?'🔴':d<=30?'🟡':'🟢';
+      const sub=e.type==='pajak'?e.plat:e.sim;
+      const dstr=d<0?Math.abs(d)+' hari lalu':d===0?'HARI INI!':d===1?'Besok!':d+' hari lagi';
+      msg+=icon+' *'+e.nama+'*'+(sub?' ('+sub+')':'')+' — '+dstr+'\n';
+    });
+    if(done.length)msg+='✅ Selesai: '+done.length+' item\n';
+    msg+='\n';
+  }
+  if(evList.length){
+    msg+='*🎊 HARI PENTING*\n';
+    evList.forEach(ev=>{
+      const d=getEvDays(ev);const t=EV_TYPES[ev.type]||EV_TYPES['lainnya'];
+      const dstr=d===0?'HARI INI! 🎉':d===1?'Besok!':d+' hari lagi';
+      msg+=t.icon+' *'+ev.nama+'* — '+dstr+'\n';
+    });
+  }
+  if(waConfig.active){sendWAToAll(msg).then(ok=>showToast(ok?'Ringkasan dikirim ✅':'Gagal kirim','❌'));}
+  else{window.open('https://wa.me/?text='+encodeURIComponent(msg.replace(/\*/g,'').replace(/_/g,'')),'_blank');}
+}
+
+// ═══════════════════════════════════════════
+// BROWSER NOTIF
+// ═══════════════════════════════════════════
+function updateNotifUI(){
+  const p=Notification.permission;
+  const ico=document.getElementById('ns-ico'),txt=document.getElementById('ns-txt'),
+        sub=document.getElementById('ns-sub'),btn=document.getElementById('btn-allow'),
+        dot=document.getElementById('ndot'),banner=document.getElementById('notif-banner');
+  if(p==='granted'){ico.textContent='✅';txt.textContent='Notifikasi Aktif';sub.textContent='Pengingat browser sudah berjalan';btn.textContent='🔔 Tes Notifikasi';btn.onclick=testNotif;dot.classList.remove('on');banner.classList.add('hidden');}
+  else if(p==='denied'){ico.textContent='🚫';txt.textContent='Notifikasi Diblokir';sub.textContent='Buka Pengaturan Browser → Izin Situs';btn.textContent='⚙️ Info Pengaturan';btn.onclick=()=>showToast('Pengaturan > Privasi > Izin Situs','⚙️');dot.classList.add('on');banner.classList.add('hidden');}
+  else{ico.textContent='🔕';txt.textContent='Notifikasi Belum Aktif';sub.textContent='Ketuk tombol untuk mengaktifkan';btn.textContent='🔔 Izinkan Notifikasi';btn.onclick=requestNotifPermission;dot.classList.add('on');banner.classList.remove('hidden');}
+}
+async function requestNotifPermission(){
+  if(!('Notification' in window)){showToast('Browser tidak mendukung notifikasi','⚠️');return;}
+  const r=await Notification.requestPermission();updateNotifUI();
+  if(r==='granted'){showToast('Notifikasi aktif! 🔔');checkBrowserDeadlines();}else showToast('Izin ditolak','❌');
+}
+function checkBrowserDeadlines(){
+  if(Notification.permission!=='granted'||!('serviceWorker' in navigator))return;
+  const activeEntries=entries.filter(e=>!e.done);
+  navigator.serviceWorker.ready.then(reg=>{if(reg.active)reg.active.postMessage({type:'CHECK_DEADLINES',entries:activeEntries});});
+  settings.lastChecked=new Date().toISOString().split('T')[0];localStorage.setItem('ps-cfg',JSON.stringify(settings));
+}
+async function testNotif(){
+  if(Notification.permission!=='granted'){await requestNotifPermission();return;}
+  const reg=await navigator.serviceWorker.ready;
+  reg.showNotification('🔔 PajakSIM — Tes Notifikasi',{
+    body:'Notifikasi browser berfungsi!',
+    icon:'data:image/png;base64,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',badge:'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAYAAABV7bNHAAAGfklEQVR4nO1cS2tdVRT+rlRbIhZqbyRpraFWRW1raqUUjGBx5AsdCGKLOBHBkfMORAV/gSMnThwKgtXSsQM7KBZabcUi6CAkseSmA0ur0RR2B+eec/Zjrb3Xfpybm5ovXDh37cda+7trrf045wTYxCY20SF6OY0fmn1TAQpQCoCCUmpY0sowlClLpjCsa8uaPmD1q2iZptOUtfUVFJbnzyeNNbrRzKG3FEcGR1CYjO4J0nUvL1wQj1tccebp44o0JjAQGRlCggJkOLKA9w4WLgbHf5eYnNZqs1AnxSej2rIymERJ6idgcvdssLMgQTOHT9Q/TyNTBAGKGlCOrCoImefXD7ThzWBy91PeCl6CZg6fqMLKce3GKscciYFSGQeOjCjv0vqY3HWQbcgS1OQcPU+QhlCkUSHHG+iTlSaD66O/6wBZiSSoyTkWOWQSJpTRRkXkH2m9wuHan97vVNoSVqyT45b7vIealZxQ6iRPlSC0guNB1TqnVlKFT+s5XD6ipmePwVa5Q6TTv08WMUEw0H+0/vSTRkPCgyjv0MPKrMNd02saS49oEOnLhajJgLHFIUgR4WV2EMhHThh5SKMMLr1cyAxXI8SqvVVdURu8FmJmyFnKPNccabTBdHi5KC2rbOlPPdEUWh7EhYSdqImQc5b1ptzpU5SwLW8b2QK1hUkQE15k2HHkUO1teUZCZ9uEQjdCpoP3IAiI0b47O/bhNSmnDPNuZRJDTrpPZPeOFkH0qpVP1DQ5dl3hta1LUE6FXOnkTS8UWaXu4FxywvnItwQIeo+AlJL7v6gkrctJYqhyqz1vVNxGOBhyOd6lQZSk7TIxOd58BLeOo1dAWsrMKMpnFbxJmnVdT/LmyAGAl06eYg1JwemPXzBtaExKCDnGk4wjxz37X3NqGR2JiTHLXzz5Dam8FE5/dIzIb1TOs7yZW68BWLn6aw+gthqUu2Xmo1EhbStDhVwLY6thDFT/1B1Z5fWfqdj83rX3AMCrn3xvSQQhJ/zx5EnaKo+bxbpH+OwpLjnXSEvSTlkoH40SkQk7fZqXdOgSsW7kxHiPZ2thw9xqcI18rjkWXtMYQxChl8Z5D0BtNdhGtGI+7GQGlANjU4b3ACWStNPOI+saHiJSvAdwDu2V9gE53TtTO+U1qu3nzKeviAzJwXcfPteq94VZpPcA2Um6xd63v41SXBKPvvcDW/bb50f9pAXgLBTtv6ZDyluGZSFyrsxXn9KQ9PvY++e0b/FhH/QgFgk5pguSREj0HoA9MBMoqgRRzdcX8u2FDp4gwXTPP1gwbki3MxBiRNLeqF6U+GP692JN3zJSLn920JEd+OBSil3R8OrO8HRzFlOK/AxLtQ+cmY0y0CcviS51GyeK048c81PNeNLffy0GFXXlSRIS7t5yT3S/9Yki/YSZvYImD87k5ADdeJK0z7Vb/yXrMD1o3/P6goFsoOejf64vOeX7Hj/aXP9+5ZxTXsqTKHJCumM8ifEgK8/AzUtmPd5A6nuX6Eq34NYzENrZ38kQTfNV0f+DEBtmiHHJmUzQLmF23FN5oCt0pdtI0lN75+pFDtvADsPVG8tiZaWn+piZMXaqr5O0RdCzxuilOWn1xiCocNvE/fytIk0mup2kla2t/RvUnbMOins+yKzcXG67t4/Vmyussq0TO4ibdcTAte/3fTXrs9+La6+fba5TyNGRmaR1knZi9eY1p8bWiR1eYipJK8shpsbOU3MAgOtv/JjdV+SBmX+6N8KoLosKp/GDZ6FIfUDObuwRrdFnK+fu6ZfwHh3bvz6S3YfgXQ2iOLhwdL3FaUd51hjCG2LeBxBCZ0Sie2jjH2KJt57bFr56McSM+mkQKQyClufP9x7Y8wzHEiMOeF3EDGbj6rtnaJ0CTH3xcnLbeg0EBN72cYuYIxAJKZY8eOt6TBDx8IJWRbS7vzMStUPQ8sKF3uSDhwQsyZN0VRoghvhhcsIkFXp4AZIbh16PykzSgf7XKwfpIM+kBwsXe/5jDmbhiPhF4zjB9h7A81r4YPGnnjEgwF1Fh0jZIMQANDlAIMQGiz/37Jfucx7Ti8WochBHDiDIQYOlSz3npXvpsUimp4wiB/nIAYT/3GRl6XKPDxv/RnacESIHiHj8ZeXPX3qA9V75BiCBgoSYGln/gUp/O7gUShxR1NAPzGJI0RH3AJWFVKU+bMeRYqSXsK/4AEvh4bPvJBP1x9yXxcZ1G+iW6pNc6WkmAAAAAElFTkSuQmCC',
+    tag:'test-'+Date.now(),vibrate:[200,100,200]
+  });showToast('Tes notifikasi dikirim! 🔔');
+}
+function openNotifSheet(){
+  updateNotifUI();
+  document.querySelectorAll('#notif-ov .ntchip').forEach(c=>c.classList.toggle('on',settings.thresholds.includes(parseInt(c.dataset.d))));
+  document.getElementById('notif-ov').classList.add('open');
+}
+function togT(el){
+  el.classList.toggle('on');const v=parseInt(el.dataset.d);
+  settings.thresholds=el.classList.contains('on')?[...settings.thresholds,v]:settings.thresholds.filter(x=>x!==v);
+  localStorage.setItem('ps-cfg',JSON.stringify(settings));
+}
+
+
+// ═══════════════════════════════════════════
+// SYNC TO NETLIFY (server-side notifications)
+// ═══════════════════════════════════════════
+let _syncTimer = null;
+let _syncStatus = 'idle'; // idle | syncing | ok | error
+
+function syncToServer(immediate=false) {
+  // Debounce: wait 2s after last change before syncing
+  clearTimeout(_syncTimer);
+  _syncTimer = setTimeout(async () => {
+    try {
+      _syncStatus = 'syncing';
+      updateSyncUI();
+      const payload = {
+        entries,
+        events,
+        waConfig,
+        settings
+      };
+      const resp = await fetch('/api/save-data', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload)
+      });
+      if (resp.ok) {
+        _syncStatus = 'ok';
+        const d = new Date();
+        localStorage.setItem('ps-last-sync', d.toISOString());
+        console.log('[sync] Data saved to Netlify:', d.toLocaleTimeString('id-ID'));
+      } else {
+        _syncStatus = 'error';
+        console.warn('[sync] Server returned', resp.status);
+      }
+    } catch(err) {
+      _syncStatus = 'error';
+      console.warn('[sync] Sync failed:', err.message);
+    }
+    updateSyncUI();
+  }, immediate ? 100 : 2000);
+}
+
+function updateSyncUI() {
+  const el = document.getElementById('sync-indicator');
+  if (!el) return;
+  const icons = { idle:'☁️', syncing:'🔄', ok:'✅', error:'⚠️' };
+  const labels = { idle:'Belum sync', syncing:'Menyimpan...', ok:'Tersimpan di cloud', error:'Gagal sync' };
+  const colors = { idle:'var(--mut)', syncing:'var(--amb)', ok:'var(--grn)', error:'var(--red)' };
+  el.innerHTML = `<span style="font-size:11px;color:${colors[_syncStatus]}">${icons[_syncStatus]} ${labels[_syncStatus]}</span>`;
+}
+
+function getSyncTime() {
+  const t = localStorage.getItem('ps-last-sync');
+  if (!t) return 'Belum pernah sync';
+  const d = new Date(t);
+  return d.toLocaleString('id-ID', {day:'2-digit',month:'short',hour:'2-digit',minute:'2-digit'});
+}
+
+// ═══════════════════════════════════════════
+// HELPERS
+// ═══════════════════════════════════════════
+const genId=()=>Date.now().toString(36)+Math.random().toString(36).slice(2);
+const save=()=>{localStorage.setItem('ps-entries',JSON.stringify(entries));syncToServer();}
+function getDays(d){const t=new Date();t.setHours(0,0,0,0);const g=new Date(d+'T00:00:00');g.setHours(0,0,0,0);return Math.round((g-t)/86400000);}
+const getSt=d=>d<0?'expired':d<=7?'danger':d<=30?'warning':'safe';
+const fmtD=s=>s?new Date(s+'T00:00:00').toLocaleDateString('id-ID',{day:'2-digit',month:'short',year:'numeric'}):'—';
+const fmtDy=s=>s?new Date(s+'T00:00:00').toLocaleDateString('id-ID',{weekday:'long'}):'';
+function showToast(m,i='✅'){const t=document.getElementById('toast');t.innerHTML=i+' '+m;t.classList.add('show');clearTimeout(t._t);t._t=setTimeout(()=>t.classList.remove('show'),3000);}
+
+// ═══════════════════════════════════════════
+// RENDER
+// ═══════════════════════════════════════════
+function render(){
+  const list=document.getElementById('card-list');
+  if(curTab==='deadline') renderDeadlines(list);
+  else renderEvents(list);
+  updateTabBadges();
+}
+
+function renderDeadlines(list){
+  let data=[...entries];
+  if(curFilter==='pajak')data=data.filter(e=>e.type==='pajak'&&!e.done);
+  else if(curFilter==='sim')data=data.filter(e=>e.type==='sim'&&!e.done);
+  else if(curFilter==='danger')data=data.filter(e=>!e.done&&getDays(e.tgl)>=0&&getDays(e.tgl)<=7);
+  else if(curFilter==='selesai')data=data.filter(e=>e.done);
+  else data=data.filter(e=>!e.done);
+  if(curFilter==='selesai')data.sort((a,b)=>new Date(b.paidAt)-new Date(a.paidAt));
+  else data.sort((a,b)=>getDays(a.tgl)-getDays(b.tgl));
+  let cd=0,cw=0,cs=0;
+  entries.filter(e=>!e.done).forEach(e=>{const s=getSt(getDays(e.tgl));if(s==='danger')cd++;else if(s==='warning')cw++;else if(s==='safe')cs++;});
+  document.getElementById('cnt-d').textContent=cd;document.getElementById('cnt-w').textContent=cw;document.getElementById('cnt-s').textContent=cs;
+  if(!data.length){
+    let msg=curFilter==='selesai'?'Belum ada yang ditandai selesai.':curFilter==='semua'?'Ketuk <strong>＋ Tambah Deadline</strong> untuk mulai.':'Tidak ada data di filter ini.';
+    list.innerHTML='<div class="empty"><div class="ei">'+(curFilter==='selesai'?'✅':'📋')+'</div><div class="et">'+(curFilter==='selesai'?'Belum Ada':'Kosong')+'</div><div class="ed">'+msg+'</div></div>';
+    return;
+  }
+  list.innerHTML=data.map(e=>{
+    const isDone=!!e.done;const days=getDays(e.tgl);const st=isDone?'k':getSt(days);const ip=e.type==='pajak';
+    let dn,dl;
+    if(isDone){dn='✓';dl='selesai';}else if(days<0){dn=Math.abs(days);dl='hari lalu';}else if(days===0){dn='HARI';dl='INI !';}else{dn=days;dl='hari lagi';}
+    const doneBtn=isDone
+      ?'<div class="cbtn cbtn-done paid" onclick="undoDone(\''+e.id+'\')">↩ Buka</div>'
+      :'<div class="cbtn cbtn-done" onclick="openDoneModal(\''+e.id+'\')">✅</div>';
+    const paidInfo=isDone?'<div class="paid-info">✅ <span>'+fmtD(e.paidAt)+'</span>'+(e.paidNote?' · '+e.paidNote:'')+'</div>':'';
+    const waBtn=!isDone?'<div class="cwa"><button class="cwa-btn" onclick="sendEntryWA(\''+e.id+'\')" >'+'<svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"currentColor\"><path d=\"M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z\"/></svg> Kirim WA ke Semua</button></div>':'';
+    return '<div class="dcard s'+st+'"><div class="cbar"></div><div class="ctop"><div><div style="display:flex;align-items:center;flex-wrap:wrap;gap:4px;margin-bottom:4px"><div class="cbadge '+(ip?'bp':'bs')+'">'+(ip?'🚙 Pajak':'🪪 SIM')+'</div>'+(isDone?'<div class="selesai-badge">✅ SELESAI</div>':'')+'</div><div class="cname">'+e.nama+'</div><div class="csub">'+(ip?(e.plat||'—'):(e.sim||'SIM'))+'</div></div><div class="cbtns">'+doneBtn+'<div class="cbtn" onclick="openForm(\''+e.id+'\')">✏️</div><div class="cbtn" onclick="delEntry(\''+e.id+'\')">🗑️</div></div></div><div class="cbot"><div><div class="mdate">'+fmtD(e.tgl)+'</div><div class="dname">'+(isDone?'Tanggal deadline':fmtDy(e.tgl))+'</div></div><div class="dpill"><div class="dn">'+dn+'</div><div class="dl">'+dl+'</div></div></div>'+(e.note?'<div class="cnote">📝 '+e.note+'</div>':'')+paidInfo+waBtn+'</div>';
+  }).join('');
+}
+
+function renderEvents(list){
+  let data=[...events];
+  if(curFilter==='ulang-tahun')data=data.filter(e=>e.type==='ulang-tahun');
+  else if(curFilter==='anniversary')data=data.filter(e=>e.type==='anniversary');
+  else if(curFilter==='hari-penting')data=data.filter(e=>['hari-penting','lainnya'].includes(e.type));
+  data.sort((a,b)=>getEvDays(a)-getEvDays(b));
+  // Event summary counts
+  let ce=events.filter(e=>getEvDays(e)>=0&&getEvDays(e)<=7).length;
+  let cew=events.filter(e=>getEvDays(e)>7&&getEvDays(e)<=30).length;
+  let ces=events.filter(e=>getEvDays(e)>30).length;
+  document.getElementById('cnt-ev-d').textContent=ce;
+  document.getElementById('cnt-ev-w').textContent=cew;
+  document.getElementById('cnt-ev-s').textContent=ces;
+  if(!data.length){
+    list.innerHTML='<div class="empty"><div class="ei">🎂</div><div class="et">Belum Ada Event</div><div class="ed">Ketuk <strong>＋ Tambah Event</strong> untuk mencatat ulang tahun, anniversary, dan hari penting lainnya.</div></div>';
+    return;
+  }
+  list.innerHTML=data.map(ev=>{
+    const days=getEvDays(ev);const nextDate=getEvNextDate(ev);const st=getEvStatus(days);
+    const t=EV_TYPES[ev.type]||EV_TYPES['lainnya'];
+    let dn,dl;
+    if(days<0){dn=Math.abs(days);dl='hari lalu';}else if(days===0){dn='🎉';dl='hari ini';}else{dn=days;dl='hari lagi';}
+    // Age/year calculation
+    let ageStr='';
+    if(ev.yearly&&(ev.type==='ulang-tahun'||ev.type==='anniversary')){
+      const base=new Date(ev.date+'T00:00:00');
+      const nextY=new Date(nextDate+'T00:00:00').getFullYear();
+      const age=nextY-base.getFullYear();
+      if(age>0)ageStr='<span class="yearly-tag">🎈 ke-'+age+'</span>';
+    }
+    const yearlyTag=ev.yearly?'<span class="yearly-tag">🔁 tahunan</span>':'';
+    return '<div class="dcard '+st+'"><div class="cbar"></div><div class="ctop"><div><div style="display:flex;align-items:center;flex-wrap:wrap;gap:4px;margin-bottom:4px"><div class="cbadge '+(t.badge||'be')+'">'+t.icon+' '+t.label+'</div>'+yearlyTag+ageStr+'</div><div class="cname">'+ev.nama+'</div><div class="csub">'+fmtD(ev.yearly?ev.date:nextDate)+(ev.yearly?' (tahunan)':'')+'</div></div><div class="cbtns"><div class="cbtn cbtn-done" onclick="sendEventWA(\''+ev.id+'\')" style="color:#4ade80">'+WA_SVG+'</div><div class="cbtn" onclick="openEventForm(\''+ev.id+'\')">✏️</div><div class="cbtn" onclick="delEvent(\''+ev.id+'\')">🗑️</div></div></div><div class="cbot"><div><div class="mdate">'+fmtD(nextDate)+'</div><div class="dname">'+fmtDy(nextDate)+'</div></div><div class="dpill"><div class="dn">'+dn+'</div><div class="dl">'+dl+'</div></div></div>'+(ev.note?'<div class="cnote">📝 '+ev.note+'</div>':'')+'</div>';
+  }).join('');
+}
+
+function updateTabBadges(){
+  const urgent=entries.filter(e=>!e.done&&getDays(e.tgl)>=0&&getDays(e.tgl)<=7).length;
+  const evUrgent=events.filter(e=>getEvDays(e)>=0&&getEvDays(e)<=7).length;
+  const db=document.getElementById('tab-badge-deadline');
+  const eb=document.getElementById('tab-badge-event');
+  if(db){db.textContent=urgent;db.style.display=urgent>0?'':'none';}
+  if(eb){eb.textContent=evUrgent;eb.style.display=evUrgent>0?'':'none';}
+}
+
+// ═══════════════════════════════════════════
+// FILTER / FORM / CRUD
+// ═══════════════════════════════════════════
+function setFilter(f,el){
+  curFilter=f;
+  const row=curTab==='deadline'?'#filt-deadline':'#filt-event';
+  document.querySelectorAll(row+' .fpill').forEach(p=>p.classList.remove('active'));
+  if(el&&el.classList)el.classList.add('active');
+  render();
+}
+function openForm(id=null){
+  editingId=id;
+  document.getElementById('form-title').textContent=id?'Edit Deadline':'Tambah Deadline';
+  if(id){const e=entries.find(x=>x.id===id);setType(e.type);document.getElementById('f-nama').value=e.nama;document.getElementById('f-plat').value=e.plat||'';document.getElementById('f-sim').value=e.sim||'SIM A';document.getElementById('f-tgl').value=e.tgl;document.getElementById('f-note').value=e.note||'';}
+  else{setType('pajak');['f-nama','f-plat','f-note'].forEach(i=>document.getElementById(i).value='');document.getElementById('f-tgl').value='';document.getElementById('f-sim').value='SIM A';}
+  document.getElementById('form-ov').classList.add('open');
+}
+function setType(t){
+  curType=t;
+  document.getElementById('tp-p').className='tbtn'+(t==='pajak'?' tp':'');
+  document.getElementById('tp-s').className='tbtn'+(t==='sim'?' ts':'');
+  document.getElementById('fg-plat').classList.toggle('hidden',t!=='pajak');
+  document.getElementById('fg-sim').classList.toggle('hidden',t!=='sim');
+}
+function saveEntry(){
+  const nama=document.getElementById('f-nama').value.trim();
+  const tgl=document.getElementById('f-tgl').value;
+  if(!nama){showToast('Masukkan nama/label!','⚠️');return;}
+  if(!tgl){showToast('Pilih tanggal deadline!','⚠️');return;}
+  const obj={type:curType,nama,plat:document.getElementById('f-plat').value.trim().toUpperCase(),sim:document.getElementById('f-sim').value,tgl,note:document.getElementById('f-note').value.trim()};
+  if(editingId){const i=entries.findIndex(x=>x.id===editingId);entries[i]={...entries[i],...obj};showToast('Data diperbarui ✏️');}
+  else{entries.push({id:genId(),...obj});showToast('Deadline ditambahkan! 🎉');}
+  save();render();closeOv('form-ov');
+  setTimeout(()=>{checkBrowserDeadlines();checkWADeadlines();},500);
+}
+function delEntry(id){if(!confirm('Hapus catatan ini?'))return;entries=entries.filter(e=>e.id!==id);save();render();showToast('Data dihapus','🗑️');}
+function closeOv(id){document.getElementById(id).classList.remove('open');}
+function openDataSheet(){
+  const el=document.getElementById('sync-status-detail');
+  if(el)el.textContent='Terakhir sync: '+getSyncTime();
+  document.getElementById('data-ov').classList.add('open');
+}
+function ovClose(e,id){if(e.target===document.getElementById(id))closeOv(id);}
+function doExport(){
+  if(!entries.length&&!events.length){showToast('Tidak ada data','⚠️');return;}
+  const d=new Date();
+  const b=new Blob([JSON.stringify({version:4,exported:d.toISOString(),entries,events},null,2)],{type:'application/json'});
+  const a=document.createElement('a');a.href=URL.createObjectURL(b);
+  a.download='pajaksim-'+d.getFullYear()+String(d.getMonth()+1).padStart(2,'0')+String(d.getDate()).padStart(2,'0')+'.json';
+  a.click();showToast('Data diekspor 📤');closeOv('data-ov');
+}
+function doImport(e){
+  const file=e.target.files[0];if(!file)return;
+  const r=new FileReader();
+  r.onload=ev=>{
+    try{
+      const data=JSON.parse(ev.target.result);
+      const impE=Array.isArray(data)?data:(data.entries||[]);
+      const impEv=data.events||[];
+      if(!impE.length&&!impEv.length)throw new Error();
+      if(!confirm('Import '+impE.length+' deadline + '+impEv.length+' event? (duplikat diabaikan)'))return;
+      const ids=new Set(entries.map(x=>x.id));let ae=0;
+      impE.forEach(item=>{if(!ids.has(item.id)){entries.push(item);ae++;}});
+      const evIds=new Set(events.map(x=>x.id));let aev=0;
+      impEv.forEach(item=>{if(!evIds.has(item.id)){events.push(item);aev++;}});
+      save();saveEvents();render();showToast(ae+' deadline + '+aev+' event diimport 📥');closeOv('data-ov');
+    }catch{showToast('File tidak valid!','❌');}
+  };r.readAsText(file);e.target.value='';
+}
+function confirmClear(){
+  if(!entries.length&&!events.length){showToast('Tidak ada data','⚠️');return;}
+  if(!confirm('Hapus semua data ('+entries.length+' deadline, '+events.length+' event)?'))return;
+  entries=[];events=[];save();saveEvents();render();showToast('Semua data dihapus','🗑️');closeOv('data-ov');
+}
+
+// ═══════════════════════════════════════════
+// INIT
+// ═══════════════════════════════════════════
+(function(){
+  render();updateNotifUI();updateWAStatus();
+  const today=new Date().toISOString().split('T')[0];
+  if(settings.lastChecked!==today)setTimeout(checkBrowserDeadlines,2000);
+  setTimeout(()=>{checkWADeadlines();checkWAEvents();},3000);
+  setInterval(()=>{checkBrowserDeadlines();checkWADeadlines();checkWAEvents();},60*60*1000);
+  document.addEventListener('visibilitychange',()=>{if(!document.hidden){checkBrowserDeadlines();checkWADeadlines();checkWAEvents();}});
+
+  // Initial sync: push localStorage data to server on load
+  setTimeout(()=>syncToServer(true), 4000);
+})();
+
+</script>
+</body>
+</html>
